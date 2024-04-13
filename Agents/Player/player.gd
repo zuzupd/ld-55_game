@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 @export var sensitivity: float = 0.001
+@export var deadzone: float = 0.001
 var mouse_motion: Vector2 = Vector2.ZERO
 @export var player_speed = 5.0
 
@@ -36,7 +37,13 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, player_speed)
 		velocity.z = move_toward(velocity.z, 0, player_speed)
 	handle_rotation()
+	mouse_motion = Vector2.ZERO
 	move_and_slide()
 
 func handle_rotation() -> void:
-	rotate_y(-mouse_motion.x * sensitivity)
+	var rotation_intensity = -mouse_motion.x * sensitivity
+	if abs(rotation_intensity) > deadzone:
+		rotate_y(rotation_intensity)
+	else:
+		# No rotation if the movement is within the deadzone
+		return
