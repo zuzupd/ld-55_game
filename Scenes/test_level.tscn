@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://gi1uxt7hr627"]
+[gd_scene load_steps=9 format=3 uid="uid://gi1uxt7hr627"]
 
 [ext_resource type="Texture2D" uid="uid://ftfmoi17b7m6" path="res://Assets/kenney_prototype-textures/PNG/Dark/texture_01.png" id="1_51da5"]
 [ext_resource type="PackedScene" uid="uid://d1adttlg6xjkr" path="res://Agents/Player/player.tscn" id="2_6h8ky"]
@@ -17,6 +17,10 @@ sky = SubResource("Sky_hug3a")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="NavigationMesh" id="NavigationMesh_ce1wm"]
+vertices = PackedVector3Array(-39.5, 0.25, -39.5, -39.5, 0.25, 39.5, 39.5, 0.25, 39.5, 39.5, 0.25, -39.5)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1mlm"]
 albedo_texture = ExtResource("1_51da5")
 uv1_triplanar = true
@@ -30,9 +34,12 @@ environment = SubResource("Environment_knp3j")
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
 
-[node name="World" type="Node3D" parent="."]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_ce1wm")
 
-[node name="Floor" type="CSGBox3D" parent="World"]
+[node name="World" type="Node3D" parent="NavigationRegion3D"]
+
+[node name="Floor" type="CSGBox3D" parent="NavigationRegion3D/World"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, -0.5, 2.08165e-12)
 material_override = SubResource("StandardMaterial3D_a1mlm")
 use_collision = true
@@ -43,3 +50,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.794593, 0)
 
 [node name="Cultist" parent="." instance=ExtResource("3_yphsg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.5193, 0.686506, 0)
+
+[node name="Cultist2" parent="." instance=ExtResource("3_yphsg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.5193, 0.686506, 2.65225)
+
+[node name="Cultist3" parent="." instance=ExtResource("3_yphsg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.5193, 0.686506, 4.92768)

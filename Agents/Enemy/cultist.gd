@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+@onready var nav_agent = $NavigationAgent3D
+
 @export var health = 2
 @export var speed = 5.0
 @export var melee_threshold = 2.0
@@ -15,12 +17,25 @@ func _ready() -> void:
 	else:
 		print("MeleeArea node not found.")
 
+func update_target_location(target_location):
+	nav_agent.target_position = target_location
+
 func _on_enemy_count_changed(count):
 	print("Updated enemy count: ", count)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	
+func _physics_process(delta: float) -> void:
+	var current_location = global_transform.origin
+	var next_location = nav_agent.get_next_path_position()
+	var new_velocity = (next_location - current_location).normalized() * speed
+	
+	nav_agent.set_velocity(new_velocity)
+	
+	#velocity = new_velocity
+	
 
 func isDead() -> bool:
 	return false
@@ -81,5 +96,16 @@ func _on_vision_timer_timeout() -> void:
 				var player_position = overlap.global_transform.origin
 				var enemy_position = global_transform.origin
 				var distance_to_player = enemy_position.distance_to(player_position)
+				update_target_location(player.global_transform.origin)
 				decide_enemy_action(player, player_position, distance_to_player)
 				return
+
+
+func _on_navigation_agent_3d_velocity_computed(safe_velocity: Vector3) -> void:
+	velocity = velocity.move_toward(safe_velocity, .25)
+	move_and_slide()
+
+
+func _on_navigation_agent_3d_waypoint_reached(details: Dictionary) -> void:
+	#print("target reached")
+	pass

@@ -40,7 +40,7 @@ func _input(event) -> void:
 func _physics_process(delta: float) -> void:
 	var melee_area = $MeleeArea
 	var enemy_count = melee_area.enemy_count
-	print("Enemies in melee range: ", enemy_count)
+	#print("Enemies in melee range: ", enemy_count)
 	
 	if not is_on_floor():
 		velocity.y -= gravity * delta

@@ -38,4 +38,12 @@ shape = SubResource("CylinderShape3D_5dkh3")
 wait_time = 0.25
 autostart = true
 
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 3.0
+target_desired_distance = 3.0
+avoidance_enabled = true
+radius = 1.0
+
 [connection signal="timeout" from="VisionTimer" to="." method="_on_vision_timer_timeout"]
+[connection signal="velocity_computed" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_velocity_computed"]
+[connection signal="waypoint_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_waypoint_reached"]
