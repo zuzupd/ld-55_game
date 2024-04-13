@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/menu/editor_toolbar.gd" id="1_o71fd"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/menu/action_popup_menu.gd" id="2_ni0c8"]
-[ext_resource type="Texture2D" uid="uid://bs54uhn80ykrr" path="res://addons/cyclops_level_builder/art/icons/xray_normal.svg" id="3_ldp0l"]
-[ext_resource type="Texture2D" uid="uid://dloyvoq8piwx0" path="res://addons/cyclops_level_builder/art/icons/snap.svg" id="4_begwr"]
+[ext_resource type="Texture2D" uid="uid://b7ae122lh5nyj" path="res://addons/cyclops_level_builder/art/icons/xray_normal.svg" id="3_ldp0l"]
+[ext_resource type="Texture2D" uid="uid://cvowwy5q07pn6" path="res://addons/cyclops_level_builder/art/icons/snap.svg" id="4_begwr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o7kxq"]
 
@@ -26,6 +26,7 @@ layout_mode = 2
 
 [node name="MenuBar" type="MenuBar" parent="HBoxContainer"]
 layout_mode = 2
+prefer_global_menu = false
 
 [node name="Menu" type="PopupMenu" parent="HBoxContainer/MenuBar"]
 unique_name_in_owner = true
