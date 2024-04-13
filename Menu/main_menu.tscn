@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ckq67bnqyccy7"]
+[gd_scene load_steps=5 format=3 uid="uid://gjuflt0yeqgo"]
 
 [ext_resource type="Script" path="res://Menu/main_menu.gd" id="1_ymhno"]
 [ext_resource type="Texture2D" uid="uid://d20osfkuiu48c" path="res://Assets/Background1.png" id="2_shw4n"]
 [ext_resource type="FontFile" uid="uid://3cyy6pqpspd7" path="res://Assets/Fonts/Goudy Mediaeval Regular.ttf" id="3_lhoiv"]
-[ext_resource type="Theme" uid="uid://b66b8yiwaudm8" path="res://Menu/MenuTheme.tres" id="4_etbkb"]
+[ext_resource type="Theme" path="res://Menu/MenuTheme.tres" id="4_etbkb"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -73,28 +73,21 @@ theme_override_constants/margin_bottom = 60
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 4
-theme_override_constants/separation = 18
 alignment = 2
 
-[node name="NewFPSButton" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("4_etbkb")
-theme_type_variation = &"FlatButton"
-text = "FPS Game"
-
-[node name="NewIsometricButton" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+[node name="NewGameButton" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("4_etbkb")
 theme_type_variation = &"FlatButton"
 disabled = true
-text = "Isometric game"
+text = "New Game"
 
-[node name="New3rdPersonButton" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer"]
+[node name="AboutButton" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("4_etbkb")
 theme_type_variation = &"FlatButton"
 disabled = true
-text = "3rd person"
+text = "About"
 
 [node name="OptionsButton" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -108,8 +101,7 @@ theme = ExtResource("4_etbkb")
 theme_type_variation = &"FlatButton"
 text = "Quit game"
 
-[connection signal="pressed" from="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/NewFPSButton" to="." method="_on_new_fps_button_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/NewIsometricButton" to="." method="_on_new_isometric_button_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/New3rdPersonButton" to="." method="_on_new_3_rd_person_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/NewGameButton" to="." method="_on_new_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/AboutButton" to="." method="_on_about_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/MarginContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
