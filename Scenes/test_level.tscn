@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://gi1uxt7hr627"]
+[gd_scene load_steps=8 format=3 uid="uid://gi1uxt7hr627"]
 
 [ext_resource type="Texture2D" uid="uid://ftfmoi17b7m6" path="res://Assets/kenney_prototype-textures/PNG/Dark/texture_01.png" id="1_51da5"]
 [ext_resource type="PackedScene" uid="uid://d1adttlg6xjkr" path="res://Agents/Player/player.tscn" id="2_6h8ky"]
+[ext_resource type="PackedScene" uid="uid://dbqbermcbfeev" path="res://Agents/Enemy/cultist.tscn" id="3_yphsg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yr1ga"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -39,3 +40,6 @@ size = Vector3(80, 0.5, 80)
 
 [node name="Player" parent="." instance=ExtResource("2_6h8ky")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.794593, 0)
+
+[node name="Cultist" parent="." instance=ExtResource("3_yphsg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.5193, 0.686506, 0)

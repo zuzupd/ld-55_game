@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1adttlg6xjkr"]
+[gd_scene load_steps=9 format=3 uid="uid://d1adttlg6xjkr"]
 
 [ext_resource type="Script" path="res://Agents/Player/player.gd" id="1_ya5ey"]
+[ext_resource type="Script" path="res://Agents/Player/CameraFinetunning.gd" id="2_xv35h"]
+[ext_resource type="Script" path="res://Agents/Player/MeleeArea.gd" id="3_d8xme"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_oivsq"]
 
@@ -10,7 +12,10 @@
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_nhblq"]
 
-[node name="Player" type="CharacterBody3D"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_8fd58"]
+radius = 2.5
+
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
 script = ExtResource("1_ya5ey")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -24,12 +29,22 @@ transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 2.08165e-12, 0.42288
 mesh = SubResource("BoxMesh_pvw16")
 
 [node name="CameraPivot" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 5, 2.08165e-12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 4, 2.08165e-12)
+script = ExtResource("2_xv35h")
+camera_angle = 7.5
 
 [node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot"]
-transform = Transform3D(1, -4.96191e-16, 3.16108e-16, 3.16108e-16, 0.906308, 0.422618, -4.96191e-16, -0.422618, 0.906308, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+transform = Transform3D(1, -4.96191e-16, 3.16108e-16, 4.49462e-16, 0.991018, 0.133727, -3.79623e-16, -0.133727, 0.991018, 2.08165e-12, 0, 2.08165e-12)
 shape = SubResource("SphereShape3D_nhblq")
 spring_length = 2.0
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D"]
-transform = Transform3D(1, -5.72983e-16, 2.67186e-16, 2.67186e-16, 0.766044, 0.642788, -5.72983e-16, -0.642788, 0.766044, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+transform = Transform3D(1, -5.82091e-16, 6.21847e-17, 5.26109e-16, 0.940211, 0.340593, -2.56723e-16, -0.340593, 0.940211, 2.08165e-12, 0, 0)
+
+[node name="MeleeArea" type="Area3D" parent="."]
+script = ExtResource("3_d8xme")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeleeArea"]
+shape = SubResource("CylinderShape3D_8fd58")
+
+[connection signal="visibility_changed" from="CameraPivot/SpringArm3D" to="CameraPivot" method="_on_spring_arm_3d_visibility_changed"]
