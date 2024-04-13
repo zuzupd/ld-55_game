@@ -1,4 +1,13 @@
 {
+    "snapping": {
+        "grid": {
+            "grid_subdivisions": 10,
+            "grid_transform": "{\"o\":[0,0,0],\"x\":[0.28366219997406,0,0.958924293518066],\"y\":[0,1,0],\"z\":[-0.95892429351807,0,0.28366219997406]}",
+            "power_of_two_scale": -1,
+            "unit_size": 0.1,
+            "use_subdivisions": false
+        }
+    },
     "tool": {
         "block": {
             "default_block_height": 4
@@ -20,7 +29,7 @@
             "default_block_height": 1
         },
         "stairs": {
-            "direction": 0,
+            "direction": 2,
             "step_depth": 0.5,
             "step_height": 0.25
         }

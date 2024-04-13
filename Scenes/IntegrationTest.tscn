@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyc3q4fgja1xu"]
+[gd_scene load_steps=9 format=3 uid="uid://cwfgwk2rpcxe8"]
 
 [ext_resource type="PackedScene" uid="uid://bqlmwch4lviv0" path="res://Level/tutorialLevel.tscn" id="1_2nfi8"]
 [ext_resource type="PackedScene" uid="uid://d1adttlg6xjkr" path="res://Agents/Player/player.tscn" id="2_p7l0b"]
+[ext_resource type="PackedScene" uid="uid://cl158yka16m38" path="res://Level/SealRoom.tscn" id="3_r00uw"]
+[ext_resource type="PackedScene" uid="uid://bftubcaynp05n" path="res://Level/RoomEntrance1.tscn" id="4_nn6uk"]
+[ext_resource type="PackedScene" uid="uid://br58073nkylsl" path="res://Level/Coridor.tscn" id="5_erawl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w3arj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -30,3 +33,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.72784, 0, -2.50584)
 
 [node name="Player" parent="." instance=ExtResource("2_p7l0b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.218829, 1.20914, 1.17191)
+
+[node name="SealRoom" parent="." instance=ExtResource("3_r00uw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.757661, -2.55138, -45.9616)
+
+[node name="RoomEntrance1" parent="." instance=ExtResource("4_nn6uk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.743884, -2.52956, -46.4663)
+
+[node name="Coridor" parent="." instance=ExtResource("5_erawl")]
+transform = Transform3D(0.998803, 0, -0.0489195, 0, 1, 0, 0.0489195, 0, 0.998803, -4.30149, -2.51789, -38.3033)
