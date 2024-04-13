@@ -1,9 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://cwfgwk2rpcxe8"]
+[gd_scene load_steps=6 format=3 uid="uid://cwfgwk2rpcxe8"]
 
 [ext_resource type="PackedScene" uid="uid://bqlmwch4lviv0" path="res://Level/tutorialLevel.tscn" id="1_2nfi8"]
 [ext_resource type="PackedScene" uid="uid://d1adttlg6xjkr" path="res://Agents/Player/player.tscn" id="2_p7l0b"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w3arj"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_54p6r"]
+sky_material = SubResource("ProceduralSkyMaterial_w3arj")
+
+[sub_resource type="Environment" id="Environment_mnawp"]
+background_mode = 2
+sky = SubResource("Sky_54p6r")
+tonemap_mode = 2
+glow_enabled = true
+
 [node name="IntegrationTest" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_mnawp")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
 
 [node name="Tutorial" parent="." instance=ExtResource("1_2nfi8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.72784, 0, -2.50584)
