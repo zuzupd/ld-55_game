@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://gi1uxt7hr627"]
+
+[ext_resource type="Texture2D" uid="uid://ftfmoi17b7m6" path="res://Assets/kenney_prototype-textures/PNG/Dark/texture_01.png" id="1_51da5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1mlm"]
+albedo_texture = ExtResource("1_51da5")
+uv1_triplanar = true
+
+[node name="TestLevel" type="Node3D"]
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="Floor" type="CSGBox3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, -0.5, 2.08165e-12)
+material_override = SubResource("StandardMaterial3D_a1mlm")
+size = Vector3(80, 0.5, 80)
