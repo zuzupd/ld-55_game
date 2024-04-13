@@ -24,6 +24,7 @@ mesh = SubResource("BoxMesh_pvw16")
 [node name="CameraPivot" type="Node3D" parent="."]
 
 [node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot"]
+spring_length = 5.0
 
-[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D"]
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 transform = Transform3D(1, 0, 0, 0, 0.430606, 0.90254, 0, -0.90254, 0.430606, 2.08165e-12, 8, 2)
