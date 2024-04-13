@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b66b8yiwaudm8"]
+
+[ext_resource type="FontFile" uid="uid://3cyy6pqpspd7" path="res://Assets/Fonts/Goudy Mediaeval Regular.ttf" id="1_e74cx"]
+
+[resource]
+default_font = ExtResource("1_e74cx")
+Button/colors/font_hover_color = Color(0.478431, 0.0862745, 0.0862745, 1)
+Button/constants/outline_size = 2
+Button/font_sizes/font_size = 64
