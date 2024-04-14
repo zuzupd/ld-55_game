@@ -1,4 +1,4 @@
-[gd_scene load_steps=116 format=3 uid="uid://cl158yka16m38"]
+[gd_scene load_steps=115 format=3 uid="uid://cl158yka16m38"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="1_84pcd"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="2_os68n"]
@@ -655,11 +655,7 @@ face_selected = PackedByteArray(0, 0, 0, 0, 1, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5)
 
-[sub_resource type="NavigationMesh" id="NavigationMesh_pw61n"]
-vertices = PackedVector3Array(1.5, 4.25, -3.25, 1.5, 4.5, -7.25, -3.25, 4.5, -7.25, -3.5, 4.25, -3.25, 1.5, 4.5, -4.58333, -3.41667, 4.5, -4.58333, -3.5, 4.25, -3.25, -7.25, 1, 0.5, -7.25, 1, 3.5, 5.5, 1, 3.5, 5.5, 1, 0.75, 1.5, 4.25, -3.25, -4.51493, 1, 0.490923, -7.5, 4.5, -3.5, -7.5, 3.25, -2, -6, 4.25, -3.25, 4, 4.5, -3.5, 5.5, 3.25, -2, 5.5, 4.5, -3.5)
-polygons = [PackedInt32Array(3, 5, 0), PackedInt32Array(0, 5, 4), PackedInt32Array(4, 5, 2), PackedInt32Array(4, 2, 1), PackedInt32Array(10, 12, 11), PackedInt32Array(11, 12, 6), PackedInt32Array(6, 12, 7), PackedInt32Array(7, 12, 8), PackedInt32Array(8, 12, 9), PackedInt32Array(9, 12, 10), PackedInt32Array(15, 14, 13), PackedInt32Array(18, 17, 16)]
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_4lnpt"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_umvet"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 6, 4.00001, 4),
 "format": 34359738369,
@@ -679,7 +675,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_sahow"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_psaw0"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 6, 4.00001, 4),
@@ -701,12 +697,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 192, 64, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 128, 64, 0, 0, 192, 64, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 192, 64, 0, 0, 128, 64, 0, 0, 128, 64, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_4lnpt")
+shadow_mesh = SubResource("ArrayMesh_umvet")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ro105"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0rqle"]
 points = PackedVector3Array(0, 4, 0, 0, 4, 4, 0, 0, 4, 0, 0, 0, 6, 4, 0, 6, 4, 4, 6, 0, 4, 6, 0, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_wu2yq"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_dg34e"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 0.50001, 8),
 "format": 34359738369,
@@ -726,7 +722,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_o8aol"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ya206"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 0.50001, 8),
@@ -748,12 +744,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 0, 63, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 0, 63, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 65, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_wu2yq")
+shadow_mesh = SubResource("ArrayMesh_dg34e")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0q87m"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8ei8n"]
 points = PackedVector3Array(0, 0.5, 0, 0, 0.5, 8, 0, 0, 8, 0, 0, 0, 14, 0, 0, 14, 0, 8, 14, 0.5, 8, 14, 0.5, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_i3drk"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_xt67w"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 4, 0.30001),
 "format": 34359738369,
@@ -773,7 +769,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_w32ib"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_31emk"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 4, 0.30001),
@@ -795,12 +791,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 128, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 128, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 128, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 128, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 128, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 128, 64, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_i3drk")
+shadow_mesh = SubResource("ArrayMesh_xt67w")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rn38g"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fxa54"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 4, 0.3, 14, 4, 0.3, 14, 4, 0, 0, 4, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_mfntq"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_naiqy"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 3.75, 0.30001),
 "format": 34359738369,
@@ -820,7 +816,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_xakfw"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_dk828"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 3.75, 0.30001),
@@ -842,12 +838,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 112, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 112, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 112, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 112, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 112, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 112, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 112, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 112, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 112, 64, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_mfntq")
+shadow_mesh = SubResource("ArrayMesh_naiqy")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rx1m6"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_flh4o"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 3.75, 0.3, 14, 3.75, 0.3, 14, 3.75, 0, 0, 3.75, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_05p3d"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ty8mg"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 3.5, 0.30001),
 "format": 34359738369,
@@ -867,7 +863,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ctyba"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_smm5h"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 3.5, 0.30001),
@@ -889,12 +885,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 96, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 96, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 96, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 96, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 96, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 96, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 96, 64, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_05p3d")
+shadow_mesh = SubResource("ArrayMesh_ty8mg")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g8pfu"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1a0yi"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 3.5, 0.3, 14, 3.5, 0.3, 14, 3.5, 0, 0, 3.5, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_a5ov1"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_fsxfw"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 3.25, 0.30001),
 "format": 34359738369,
@@ -914,7 +910,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_p6sdx"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_pkou1"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 3.25, 0.30001),
@@ -936,12 +932,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 80, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 80, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 80, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 80, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 80, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 80, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 80, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 80, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 80, 64, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_a5ov1")
+shadow_mesh = SubResource("ArrayMesh_fsxfw")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_r2ev3"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_68dsk"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 3.25, 0.3, 14, 3.25, 0.3, 14, 3.25, 0, 0, 3.25, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_2i03q"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_mcark"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 3, 0.30001),
 "format": 34359738369,
@@ -961,7 +957,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_kxodh"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3hmuc"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 3, 0.30001),
@@ -983,12 +979,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 64, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 64, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 64, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 64, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 64, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 64, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 64, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 64, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 64, 64, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_2i03q")
+shadow_mesh = SubResource("ArrayMesh_mcark")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_eumuk"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3dc03"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 3, 0.3, 14, 3, 0.3, 14, 3, 0, 0, 3, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_xa8wa"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_eeph7"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 2.75, 0.30001),
 "format": 34359738369,
@@ -1008,7 +1004,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_bayag"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_un445"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 2.75, 0.30001),
@@ -1030,12 +1026,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 48, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 48, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 48, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 48, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 48, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 48, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 48, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 48, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 48, 64, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_xa8wa")
+shadow_mesh = SubResource("ArrayMesh_eeph7")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ocgt5"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_aw8cs"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 2.75, 0.3, 14, 2.75, 0.3, 14, 2.75, 0, 0, 2.75, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_2r000"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_7jqgb"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 2.5, 0.30001),
 "format": 34359738369,
@@ -1055,7 +1051,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_u2nkm"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_fnnpc"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 2.5, 0.30001),
@@ -1077,12 +1073,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 32, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 32, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 32, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 32, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 32, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 32, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 32, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 32, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 32, 64, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_2r000")
+shadow_mesh = SubResource("ArrayMesh_7jqgb")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yh0cu"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gii20"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 2.5, 0.3, 14, 2.5, 0.3, 14, 2.5, 0, 0, 2.5, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_3302n"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_anfto"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 2.25, 0.30001),
 "format": 34359738369,
@@ -1102,7 +1098,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4sgvn"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_scx4h"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 2.25, 0.30001),
@@ -1124,12 +1120,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 16, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 16, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 16, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 16, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 16, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 16, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 16, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 16, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 16, 64, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_3302n")
+shadow_mesh = SubResource("ArrayMesh_anfto")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5ux67"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o50dl"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 2.25, 0.3, 14, 2.25, 0.3, 14, 2.25, 0, 0, 2.25, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ayptg"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_arvkx"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 2, 0.30001),
 "format": 34359738369,
@@ -1149,7 +1145,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_044gl"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_kt4r2"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 2, 0.30001),
@@ -1171,12 +1167,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 0, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 0, 64, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 64, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 64, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ayptg")
+shadow_mesh = SubResource("ArrayMesh_arvkx")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_v4tx0"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bwo01"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 2, 0.3, 14, 2, 0.3, 14, 2, 0, 0, 2, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_jt4wf"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_rwunn"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 1.75, 0.30001),
 "format": 34359738369,
@@ -1196,7 +1192,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_mxqqw"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_vjybn"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 1.75, 0.30001),
@@ -1218,12 +1214,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 224, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 224, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 224, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 224, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 224, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 224, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 224, 63, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_jt4wf")
+shadow_mesh = SubResource("ArrayMesh_rwunn")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6y00b"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_npm2q"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 1.75, 0.3, 14, 1.75, 0.3, 14, 1.75, 0, 0, 1.75, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4s0dd"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_vbdlt"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 1.5, 0.30001),
 "format": 34359738369,
@@ -1243,7 +1239,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_bf6px"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_0rmrn"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 1.5, 0.30001),
@@ -1265,12 +1261,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 192, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 192, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 192, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 192, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 192, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 192, 63, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_4s0dd")
+shadow_mesh = SubResource("ArrayMesh_vbdlt")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_73l7m"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s4bty"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 1.5, 0.3, 14, 1.5, 0.3, 14, 1.5, 0, 0, 1.5, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_eshkd"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_yolym"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 1.25, 0.30001),
 "format": 34359738369,
@@ -1290,7 +1286,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_rxxqh"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_244f4"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 1.25, 0.30001),
@@ -1312,12 +1308,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 160, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 160, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 160, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 160, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 160, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 160, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 160, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 160, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 160, 63, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_eshkd")
+shadow_mesh = SubResource("ArrayMesh_yolym")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ts3dt"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fbbbi"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 1.25, 0.3, 14, 1.25, 0.3, 14, 1.25, 0, 0, 1.25, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1oxue"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_xc15v"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 1, 0.30001),
 "format": 34359738369,
@@ -1337,7 +1333,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_ywsuj"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_wwg6q"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 1, 0.30001),
@@ -1359,12 +1355,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 128, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 128, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 128, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 128, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 128, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 128, 63, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_1oxue")
+shadow_mesh = SubResource("ArrayMesh_xc15v")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hv62m"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bdqcs"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 1, 0.3, 14, 1, 0.3, 14, 1, 0, 0, 1, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_jgo5d"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_d63t0"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 0.75, 0.30001),
 "format": 34359738369,
@@ -1384,7 +1380,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_xml1j"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_cncvg"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 0.75, 0.30001),
@@ -1406,12 +1402,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 64, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 64, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 64, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 64, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 64, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 64, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 64, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 0, 0, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 64, 63, 154, 153, 153, 62, 0, 0, 96, 65, 0, 0, 64, 63, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_jgo5d")
+shadow_mesh = SubResource("ArrayMesh_d63t0")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_n0pvq"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5vkrm"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 0.75, 0.3, 14, 0.75, 0.3, 14, 0.75, 0, 0, 0.75, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_4sepy"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_xsqek"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 0.5, 0.30001),
 "format": 34359738369,
@@ -1431,7 +1427,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_wkmnu"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_m5bx2"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 14, 0.5, 0.30001),
@@ -1453,12 +1449,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 0, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 96, 65, 0, 0, 0, 63, 154, 153, 153, 62, 0, 0, 0, 0, 0, 0, 0, 63, 154, 153, 153, 62, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_4sepy")
+shadow_mesh = SubResource("ArrayMesh_xsqek")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lxybw"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_453j0"]
 points = PackedVector3Array(0, 0, 0.3, 14, 0, 0.3, 14, 0, 0, 0, 0, 0, 0, 0.5, 0.3, 14, 0.5, 0.3, 14, 0.5, 0, 0, 0.5, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_gbmuu"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_pxghs"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1e-05, 0.50001, 4),
 "format": 34359738369,
@@ -1478,7 +1474,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_vrije"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_wprjy"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1e-05, 0.50001, 4),
@@ -1500,12 +1496,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_gbmuu")
+shadow_mesh = SubResource("ArrayMesh_pxghs")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fj8hd"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p5cy8"]
 points = PackedVector3Array(0, 0.5, 0, 0, 0.5, 4, 0, 0, 4, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0.5, 4, 0.5, 0, 4, 0.5, 0, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_gi4es"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ewiuk"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 0.5, 3.00001, 4),
 "format": 34359738369,
@@ -1533,7 +1529,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_yvcae"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_7y8xi"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 0.5, 3.00001, 4),
@@ -1564,12 +1560,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 64, 64, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 64, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 64, 64, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 128, 64, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_gi4es")
+shadow_mesh = SubResource("ArrayMesh_ewiuk")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yex6f"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cfj2i"]
 points = PackedVector3Array(0, 3, 0, 0, 3, 4, 0, 0, 4, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 4, 0.5, 3, 4, 0.5, 3, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_34644"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_rnkpq"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 0.5, 0.50001, 4),
 "format": 34359738369,
@@ -1589,7 +1585,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_yr0so"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_iu2v3"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 0.5, 0.50001, 4),
@@ -1611,12 +1607,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_34644")
+shadow_mesh = SubResource("ArrayMesh_rnkpq")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xaxwd"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gmnej"]
 points = PackedVector3Array(0, 0.5, 0, 0, 0.5, 4, 0, 0, 4, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0.5, 4, 0.5, 0, 4, 0.5, 0, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_6lfg6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3s2hj"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 7, 0.50001, 0.5),
 "format": 34359738369,
@@ -1636,7 +1632,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_7fgtp"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_k1c2g"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 7, 0.50001, 0.5),
@@ -1658,12 +1654,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 224, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 224, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 224, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 224, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 224, 64, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 224, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 224, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 224, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 224, 64, 0, 0, 0, 0, 0, 0, 0, 0, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_6lfg6")
+shadow_mesh = SubResource("ArrayMesh_3s2hj")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_negau"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gqx5b"]
 points = PackedVector3Array(0, 0.5, 0, 0, 0.5, 0.5, 0, 0, 0.5, 0, 0, 0, 7, 0.5, 0, 7, 0.5, 0.5, 7, 0, 0.5, 7, 0, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_a5f3k"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_dwckx"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1e-05, 3.00001, 4),
 "format": 34359738369,
@@ -1691,7 +1687,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_e288l"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_knscl"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1e-05, 3.00001, 4),
@@ -1722,12 +1718,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 0, 63, 0, 0, 64, 64, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 64, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 64, 64, 0, 0, 128, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 64, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 64, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 64, 64, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 64, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 64, 64, 0, 0, 128, 64, 0, 0, 0, 0, 0, 0, 64, 64, 0, 0, 128, 64, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128, 255, 127, 255, 255, 0, 0, 0, 128)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_a5f3k")
+shadow_mesh = SubResource("ArrayMesh_dwckx")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_supsh"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qbl78"]
 points = PackedVector3Array(0, 3, 0, 0, 3, 4, 0, 0, 4, 0, 0, 0, 0.5, 0, 0, 0.5, 0, 4, 0.5, 3, 4, 0.5, 3, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_1a8jt"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_0fumk"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 7, 3.00001, 0.5),
 "format": 34359738369,
@@ -1755,7 +1751,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_npbxs"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_v36rk"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 7, 3.00001, 0.5),
@@ -1786,12 +1782,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 224, 64, 0, 0, 64, 64, 0, 0, 0, 63, 0, 0, 224, 64, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 224, 64, 0, 0, 64, 64, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 64, 64, 0, 0, 0, 63, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_1a8jt")
+shadow_mesh = SubResource("ArrayMesh_0fumk")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vkdjl"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_duxar"]
 points = PackedVector3Array(0, 3, 0, 0, 3, 0.5, 0, 0, 0.5, 0, 0, 0, 7, 0, 0, 7, 0, 0.5, 7, 3, 0.5, 7, 3, 0)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_8ghtm"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_iofjc"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1.00001, 5.50001, 3.50001),
 "format": 34359738369,
@@ -1819,7 +1815,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_s8qwe"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_6nv7u"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1.00001, 5.50001, 3.50001),
@@ -1850,12 +1846,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 176, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 64, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 0, 0, 0, 0, 176, 64, 0, 0, 96, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 0, 0, 0, 0, 176, 64, 0, 0, 96, 64, 0, 0, 128, 63, 0, 0, 176, 64, 0, 0, 96, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 64, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_8ghtm")
+shadow_mesh = SubResource("ArrayMesh_iofjc")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4lfui"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gf1rk"]
 points = PackedVector3Array(1, 5.5, 3.5, 0, 5.5, 3.5, 0, 5.5, 0, 1, 5.5, 0, 0, 0, 0, 0, 0, 3.5, 1, 0, 0, 1, 0, 3.5)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_3u1qg"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_ure2x"]
 _surfaces = [{
 "aabb": AABB(-4, -4, -4.5, 4.00001, 7, 4.50001),
 "format": 34359738369,
@@ -1883,7 +1879,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_25o7b"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_2ye3q"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(-4, -4, -4.5, 4.00001, 7, 4.50001),
@@ -1914,12 +1910,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 128, 63, 0, 0, 128, 192, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 192, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 192, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 192, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 192, 0, 0, 0, 0, 0, 0, 96, 192, 0, 0, 128, 192, 0, 0, 144, 192, 0, 0, 128, 192, 0, 0, 128, 192, 0, 0, 144, 192, 0, 0, 128, 63, 0, 0, 128, 192, 0, 0, 0, 0, 0, 0, 128, 192, 0, 0, 128, 192, 0, 0, 144, 192, 0, 0, 0, 0, 0, 0, 128, 192, 0, 0, 0, 0, 0, 0, 96, 192, 0, 0, 64, 64, 0, 0, 144, 192, 0, 0, 128, 192, 0, 0, 64, 64, 0, 0, 144, 192, 0, 0, 128, 192, 0, 0, 128, 192, 0, 0, 144, 192, 0, 0, 96, 192, 0, 0, 64, 64, 0, 0, 144, 192, 0, 0, 128, 192, 0, 0, 128, 192, 0, 0, 144, 192, 0, 0, 96, 192, 0, 0, 128, 192, 0, 0, 144, 192, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 255, 127, 255, 255, 255, 191, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 127, 0, 0, 0, 0, 0, 128, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191, 255, 255, 255, 255, 0, 0, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_3u1qg")
+shadow_mesh = SubResource("ArrayMesh_ure2x")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dhts1"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_njfj5"]
 points = PackedVector3Array(0, -4, 0, -4, -4, -4.5, -4, 3, -4.5, 0, 1.5, 0, -3.5, 3, -4.5, 1, 1.5, 0, 1, -4, 0, -3.5, -4, -4.5)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_eu2c2"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_3etk3"]
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1.00001, 5.50001, 3.50001),
 "format": 34359738369,
@@ -1947,7 +1943,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_kp0cl"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_u7gj4"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(0, 0, 0, 1.00001, 5.50001, 3.50001),
@@ -1978,12 +1974,12 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 128, 63, 0, 0, 176, 64, 0, 0, 96, 64, 0, 0, 128, 63, 0, 0, 176, 64, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 128, 63, 0, 0, 176, 64, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 255, 255, 255, 255)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_eu2c2")
+shadow_mesh = SubResource("ArrayMesh_3etk3")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cmodl"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_coox4"]
 points = PackedVector3Array(1, 5.5, 3.5, 0, 5.5, 3.5, 0, 5.5, 0, 1, 5.5, 0, 0, 0, 0, 0, 0, 3.5, 1, 0, 0, 1, 0, 3.5)
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_qik6e"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_dcnf3"]
 _surfaces = [{
 "aabb": AABB(-1, 0, -4.5, 5, 6.5, 4.5),
 "format": 34359738369,
@@ -2011,7 +2007,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_kqvk6"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_8xv1x"]
 lightmap_size_hint = Vector2i(1000, 1000)
 _surfaces = [{
 "aabb": AABB(-1, 0, -4.5, 5, 6.5, 4.5),
@@ -2042,9 +2038,9 @@ _surfaces = [{
 "vertex_data": PackedByteArray(0, 0, 128, 191, 0, 0, 160, 64, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 208, 64, 0, 0, 144, 192, 0, 0, 128, 64, 0, 0, 208, 64, 0, 0, 144, 192, 0, 0, 128, 191, 0, 0, 160, 64, 0, 0, 0, 0, 0, 0, 128, 64, 0, 0, 208, 64, 0, 0, 144, 192, 0, 0, 0, 0, 0, 0, 160, 64, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 0, 0, 0, 0, 144, 192, 0, 0, 96, 64, 0, 0, 208, 64, 0, 0, 144, 192, 0, 0, 128, 191, 0, 0, 160, 64, 0, 0, 0, 0, 0, 0, 96, 64, 0, 0, 0, 0, 0, 0, 144, 192, 0, 0, 128, 191, 0, 0, 160, 64, 0, 0, 0, 0, 0, 0, 128, 191, 0, 0, 0, 0, 0, 0, 0, 0, 255, 127, 255, 223, 255, 255, 255, 191, 255, 127, 255, 223, 255, 255, 255, 191, 255, 127, 255, 223, 255, 255, 255, 191, 255, 127, 255, 223, 255, 255, 255, 191, 255, 127, 255, 223, 255, 255, 255, 191, 255, 127, 255, 223, 255, 255, 255, 191, 0, 0, 255, 191, 255, 63, 255, 191, 0, 0, 255, 191, 255, 63, 255, 191, 0, 0, 255, 191, 255, 63, 255, 191, 0, 0, 255, 191, 255, 63, 255, 191, 0, 0, 255, 191, 255, 63, 255, 191, 0, 0, 255, 191, 255, 63, 255, 191)
 }]
 blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_qik6e")
+shadow_mesh = SubResource("ArrayMesh_dcnf3")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_srs2m"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o50aj"]
 points = PackedVector3Array(3.5, 0, -4.5, -1, 0, 0, 0, 0, 0, 4, 0, -4.5, 4, 6.5, -4.5, 0, 5, 0, -1, 5, 0, 3.5, 6.5, -4.5)
 
 [node name="SealRoom" type="Node3D"]
@@ -2211,331 +2207,328 @@ script = ExtResource("1_84pcd")
 block_data = SubResource("Resource_bxw36")
 materials = Array[Material]([ExtResource("5_15f1n"), ExtResource("4_dsdcu")])
 
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
-navigation_mesh = SubResource("NavigationMesh_pw61n")
+[node name="converted_blocks0" type="Node3D" parent="."]
 
-[node name="converted_blocks0" type="Node3D" parent="NavigationRegion3D"]
-
-[node name="Block_0" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_0" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -8)
 metadata/_edit_group_ = true
 
-[node name="Block_0_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_0"]
-mesh = SubResource("ArrayMesh_sahow")
+[node name="Block_0_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_0"]
+mesh = SubResource("ArrayMesh_psaw0")
 
-[node name="Block_0_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_0"]
+[node name="Block_0_col" type="StaticBody3D" parent="converted_blocks0/Block_0"]
 
-[node name="Block_0_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_0/Block_0_col"]
-shape = SubResource("ConvexPolygonShape3D_ro105")
+[node name="Block_0_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_0/Block_0_col"]
+shape = SubResource("ConvexPolygonShape3D_0rqle")
 
-[node name="Block_1" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_1" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
 metadata/_edit_group_ = true
 
-[node name="Block_1_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_1"]
-mesh = SubResource("ArrayMesh_o8aol")
+[node name="Block_1_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_1"]
+mesh = SubResource("ArrayMesh_ya206")
 
-[node name="Block_1_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_1"]
+[node name="Block_1_col" type="StaticBody3D" parent="converted_blocks0/Block_1"]
 
-[node name="Block_1_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_1/Block_1_col"]
-shape = SubResource("ConvexPolygonShape3D_0q87m")
+[node name="Block_1_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_1/Block_1_col"]
+shape = SubResource("ConvexPolygonShape3D_8ei8n")
 
-[node name="Block_2" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_2" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -4)
 metadata/_edit_group_ = true
 
-[node name="Block_2_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_2"]
-mesh = SubResource("ArrayMesh_w32ib")
+[node name="Block_2_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_2"]
+mesh = SubResource("ArrayMesh_31emk")
 
-[node name="Block_2_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_2"]
+[node name="Block_2_col" type="StaticBody3D" parent="converted_blocks0/Block_2"]
 
-[node name="Block_2_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_2/Block_2_col"]
-shape = SubResource("ConvexPolygonShape3D_rn38g")
+[node name="Block_2_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_2/Block_2_col"]
+shape = SubResource("ConvexPolygonShape3D_fxa54")
 
-[node name="Block_3" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_3" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -3.7)
 metadata/_edit_group_ = true
 
-[node name="Block_3_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_3"]
-mesh = SubResource("ArrayMesh_xakfw")
+[node name="Block_3_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_3"]
+mesh = SubResource("ArrayMesh_dk828")
 
-[node name="Block_3_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_3"]
+[node name="Block_3_col" type="StaticBody3D" parent="converted_blocks0/Block_3"]
 
-[node name="Block_3_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_3/Block_3_col"]
-shape = SubResource("ConvexPolygonShape3D_rx1m6")
+[node name="Block_3_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_3/Block_3_col"]
+shape = SubResource("ConvexPolygonShape3D_flh4o")
 
-[node name="Block_4" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_4" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -3.4)
 metadata/_edit_group_ = true
 
-[node name="Block_4_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_4"]
-mesh = SubResource("ArrayMesh_ctyba")
+[node name="Block_4_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_4"]
+mesh = SubResource("ArrayMesh_smm5h")
 
-[node name="Block_4_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_4"]
+[node name="Block_4_col" type="StaticBody3D" parent="converted_blocks0/Block_4"]
 
-[node name="Block_4_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_4/Block_4_col"]
-shape = SubResource("ConvexPolygonShape3D_g8pfu")
+[node name="Block_4_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_4/Block_4_col"]
+shape = SubResource("ConvexPolygonShape3D_1a0yi")
 
-[node name="Block_5" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_5" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -3.1)
 metadata/_edit_group_ = true
 
-[node name="Block_5_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_5"]
-mesh = SubResource("ArrayMesh_p6sdx")
+[node name="Block_5_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_5"]
+mesh = SubResource("ArrayMesh_pkou1")
 
-[node name="Block_5_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_5"]
+[node name="Block_5_col" type="StaticBody3D" parent="converted_blocks0/Block_5"]
 
-[node name="Block_5_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_5/Block_5_col"]
-shape = SubResource("ConvexPolygonShape3D_r2ev3")
+[node name="Block_5_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_5/Block_5_col"]
+shape = SubResource("ConvexPolygonShape3D_68dsk")
 
-[node name="Block_6" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_6" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2.8)
 metadata/_edit_group_ = true
 
-[node name="Block_6_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_6"]
-mesh = SubResource("ArrayMesh_kxodh")
+[node name="Block_6_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_6"]
+mesh = SubResource("ArrayMesh_3hmuc")
 
-[node name="Block_6_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_6"]
+[node name="Block_6_col" type="StaticBody3D" parent="converted_blocks0/Block_6"]
 
-[node name="Block_6_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_6/Block_6_col"]
-shape = SubResource("ConvexPolygonShape3D_eumuk")
+[node name="Block_6_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_6/Block_6_col"]
+shape = SubResource("ConvexPolygonShape3D_3dc03")
 
-[node name="Block_7" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_7" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2.5)
 metadata/_edit_group_ = true
 
-[node name="Block_7_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_7"]
-mesh = SubResource("ArrayMesh_bayag")
+[node name="Block_7_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_7"]
+mesh = SubResource("ArrayMesh_un445")
 
-[node name="Block_7_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_7"]
+[node name="Block_7_col" type="StaticBody3D" parent="converted_blocks0/Block_7"]
 
-[node name="Block_7_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_7/Block_7_col"]
-shape = SubResource("ConvexPolygonShape3D_ocgt5")
+[node name="Block_7_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_7/Block_7_col"]
+shape = SubResource("ConvexPolygonShape3D_aw8cs")
 
-[node name="Block_8" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_8" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -2.2)
 metadata/_edit_group_ = true
 
-[node name="Block_8_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_8"]
-mesh = SubResource("ArrayMesh_u2nkm")
+[node name="Block_8_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_8"]
+mesh = SubResource("ArrayMesh_fnnpc")
 
-[node name="Block_8_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_8"]
+[node name="Block_8_col" type="StaticBody3D" parent="converted_blocks0/Block_8"]
 
-[node name="Block_8_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_8/Block_8_col"]
-shape = SubResource("ConvexPolygonShape3D_yh0cu")
+[node name="Block_8_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_8/Block_8_col"]
+shape = SubResource("ConvexPolygonShape3D_gii20")
 
-[node name="Block_9" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_9" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -1.9)
 metadata/_edit_group_ = true
 
-[node name="Block_9_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_9"]
-mesh = SubResource("ArrayMesh_4sgvn")
+[node name="Block_9_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_9"]
+mesh = SubResource("ArrayMesh_scx4h")
 
-[node name="Block_9_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_9"]
+[node name="Block_9_col" type="StaticBody3D" parent="converted_blocks0/Block_9"]
 
-[node name="Block_9_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_9/Block_9_col"]
-shape = SubResource("ConvexPolygonShape3D_5ux67")
+[node name="Block_9_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_9/Block_9_col"]
+shape = SubResource("ConvexPolygonShape3D_o50dl")
 
-[node name="Block_10" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_10" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -1.6)
 metadata/_edit_group_ = true
 
-[node name="Block_10_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_10"]
-mesh = SubResource("ArrayMesh_044gl")
+[node name="Block_10_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_10"]
+mesh = SubResource("ArrayMesh_kt4r2")
 
-[node name="Block_10_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_10"]
+[node name="Block_10_col" type="StaticBody3D" parent="converted_blocks0/Block_10"]
 
-[node name="Block_10_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_10/Block_10_col"]
-shape = SubResource("ConvexPolygonShape3D_v4tx0")
+[node name="Block_10_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_10/Block_10_col"]
+shape = SubResource("ConvexPolygonShape3D_bwo01")
 
-[node name="Block_11" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_11" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -1.3)
 metadata/_edit_group_ = true
 
-[node name="Block_11_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_11"]
-mesh = SubResource("ArrayMesh_mxqqw")
+[node name="Block_11_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_11"]
+mesh = SubResource("ArrayMesh_vjybn")
 
-[node name="Block_11_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_11"]
+[node name="Block_11_col" type="StaticBody3D" parent="converted_blocks0/Block_11"]
 
-[node name="Block_11_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_11/Block_11_col"]
-shape = SubResource("ConvexPolygonShape3D_6y00b")
+[node name="Block_11_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_11/Block_11_col"]
+shape = SubResource("ConvexPolygonShape3D_npm2q")
 
-[node name="Block_12" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_12" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -1)
 metadata/_edit_group_ = true
 
-[node name="Block_12_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_12"]
-mesh = SubResource("ArrayMesh_bf6px")
+[node name="Block_12_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_12"]
+mesh = SubResource("ArrayMesh_0rmrn")
 
-[node name="Block_12_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_12"]
+[node name="Block_12_col" type="StaticBody3D" parent="converted_blocks0/Block_12"]
 
-[node name="Block_12_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_12/Block_12_col"]
-shape = SubResource("ConvexPolygonShape3D_73l7m")
+[node name="Block_12_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_12/Block_12_col"]
+shape = SubResource("ConvexPolygonShape3D_s4bty")
 
-[node name="Block_13" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_13" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -0.7)
 metadata/_edit_group_ = true
 
-[node name="Block_13_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_13"]
-mesh = SubResource("ArrayMesh_rxxqh")
+[node name="Block_13_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_13"]
+mesh = SubResource("ArrayMesh_244f4")
 
-[node name="Block_13_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_13"]
+[node name="Block_13_col" type="StaticBody3D" parent="converted_blocks0/Block_13"]
 
-[node name="Block_13_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_13/Block_13_col"]
-shape = SubResource("ConvexPolygonShape3D_ts3dt")
+[node name="Block_13_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_13/Block_13_col"]
+shape = SubResource("ConvexPolygonShape3D_fbbbi")
 
-[node name="Block_14" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_14" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -0.4)
 metadata/_edit_group_ = true
 
-[node name="Block_14_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_14"]
-mesh = SubResource("ArrayMesh_ywsuj")
+[node name="Block_14_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_14"]
+mesh = SubResource("ArrayMesh_wwg6q")
 
-[node name="Block_14_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_14"]
+[node name="Block_14_col" type="StaticBody3D" parent="converted_blocks0/Block_14"]
 
-[node name="Block_14_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_14/Block_14_col"]
-shape = SubResource("ConvexPolygonShape3D_hv62m")
+[node name="Block_14_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_14/Block_14_col"]
+shape = SubResource("ConvexPolygonShape3D_bdqcs")
 
-[node name="Block_15" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_15" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -0.0999999)
 metadata/_edit_group_ = true
 
-[node name="Block_15_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_15"]
-mesh = SubResource("ArrayMesh_xml1j")
+[node name="Block_15_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_15"]
+mesh = SubResource("ArrayMesh_cncvg")
 
-[node name="Block_15_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_15"]
+[node name="Block_15_col" type="StaticBody3D" parent="converted_blocks0/Block_15"]
 
-[node name="Block_15_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_15/Block_15_col"]
-shape = SubResource("ConvexPolygonShape3D_n0pvq")
+[node name="Block_15_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_15/Block_15_col"]
+shape = SubResource("ConvexPolygonShape3D_5vkrm")
 
-[node name="Block_16" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_16" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0.2)
 metadata/_edit_group_ = true
 
-[node name="Block_16_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_16"]
-mesh = SubResource("ArrayMesh_wkmnu")
+[node name="Block_16_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_16"]
+mesh = SubResource("ArrayMesh_m5bx2")
 
-[node name="Block_16_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_16"]
+[node name="Block_16_col" type="StaticBody3D" parent="converted_blocks0/Block_16"]
 
-[node name="Block_16_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_16/Block_16_col"]
-shape = SubResource("ConvexPolygonShape3D_lxybw")
+[node name="Block_16_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_16/Block_16_col"]
+shape = SubResource("ConvexPolygonShape3D_453j0")
 
-[node name="Block_17" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_17" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 3.5, -8)
 metadata/_edit_group_ = true
 
-[node name="Block_17_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_17"]
-mesh = SubResource("ArrayMesh_vrije")
+[node name="Block_17_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_17"]
+mesh = SubResource("ArrayMesh_wprjy")
 
-[node name="Block_17_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_17"]
+[node name="Block_17_col" type="StaticBody3D" parent="converted_blocks0/Block_17"]
 
-[node name="Block_17_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_17/Block_17_col"]
-shape = SubResource("ConvexPolygonShape3D_fj8hd")
+[node name="Block_17_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_17/Block_17_col"]
+shape = SubResource("ConvexPolygonShape3D_p5cy8")
 
-[node name="Block_18" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_18" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 4, -8)
 metadata/_edit_group_ = true
 
-[node name="Block_18_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_18"]
-mesh = SubResource("ArrayMesh_yvcae")
+[node name="Block_18_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_18"]
+mesh = SubResource("ArrayMesh_7y8xi")
 
-[node name="Block_18_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_18"]
+[node name="Block_18_col" type="StaticBody3D" parent="converted_blocks0/Block_18"]
 
-[node name="Block_18_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_18/Block_18_col"]
-shape = SubResource("ConvexPolygonShape3D_yex6f")
+[node name="Block_18_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_18/Block_18_col"]
+shape = SubResource("ConvexPolygonShape3D_cfj2i")
 
-[node name="Block_19" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_19" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3.5, -8)
 metadata/_edit_group_ = true
 
-[node name="Block_19_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_19"]
-mesh = SubResource("ArrayMesh_yr0so")
+[node name="Block_19_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_19"]
+mesh = SubResource("ArrayMesh_iu2v3")
 
-[node name="Block_19_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_19"]
+[node name="Block_19_col" type="StaticBody3D" parent="converted_blocks0/Block_19"]
 
-[node name="Block_19_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_19/Block_19_col"]
-shape = SubResource("ConvexPolygonShape3D_xaxwd")
+[node name="Block_19_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_19/Block_19_col"]
+shape = SubResource("ConvexPolygonShape3D_gmnej")
 
-[node name="Block_20" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_20" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 3.5, -8.5)
 metadata/_edit_group_ = true
 
-[node name="Block_20_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_20"]
-mesh = SubResource("ArrayMesh_7fgtp")
+[node name="Block_20_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_20"]
+mesh = SubResource("ArrayMesh_k1c2g")
 
-[node name="Block_20_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_20"]
+[node name="Block_20_col" type="StaticBody3D" parent="converted_blocks0/Block_20"]
 
-[node name="Block_20_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_20/Block_20_col"]
-shape = SubResource("ConvexPolygonShape3D_negau")
+[node name="Block_20_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_20/Block_20_col"]
+shape = SubResource("ConvexPolygonShape3D_gqx5b")
 
-[node name="Block_21" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_21" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, -8)
 metadata/_edit_group_ = true
 
-[node name="Block_21_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_21"]
-mesh = SubResource("ArrayMesh_e288l")
+[node name="Block_21_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_21"]
+mesh = SubResource("ArrayMesh_knscl")
 
-[node name="Block_21_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_21"]
+[node name="Block_21_col" type="StaticBody3D" parent="converted_blocks0/Block_21"]
 
-[node name="Block_21_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_21/Block_21_col"]
-shape = SubResource("ConvexPolygonShape3D_supsh")
+[node name="Block_21_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_21/Block_21_col"]
+shape = SubResource("ConvexPolygonShape3D_qbl78")
 
-[node name="Block_22" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_22" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 4, -8.5)
 metadata/_edit_group_ = true
 
-[node name="Block_22_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_22"]
-mesh = SubResource("ArrayMesh_npbxs")
+[node name="Block_22_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_22"]
+mesh = SubResource("ArrayMesh_v36rk")
 
-[node name="Block_22_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_22"]
+[node name="Block_22_col" type="StaticBody3D" parent="converted_blocks0/Block_22"]
 
-[node name="Block_22_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_22/Block_22_col"]
-shape = SubResource("ConvexPolygonShape3D_vkdjl")
+[node name="Block_22_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_22/Block_22_col"]
+shape = SubResource("ConvexPolygonShape3D_duxar")
 
-[node name="Block_24" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_24" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0.5)
 metadata/_edit_group_ = true
 
-[node name="Block_24_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_24"]
-mesh = SubResource("ArrayMesh_s8qwe")
+[node name="Block_24_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_24"]
+mesh = SubResource("ArrayMesh_6nv7u")
 
-[node name="Block_24_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_24"]
+[node name="Block_24_col" type="StaticBody3D" parent="converted_blocks0/Block_24"]
 
-[node name="Block_24_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_24/Block_24_col"]
-shape = SubResource("ConvexPolygonShape3D_4lfui")
+[node name="Block_24_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_24/Block_24_col"]
+shape = SubResource("ConvexPolygonShape3D_gf1rk")
 
-[node name="Block_25" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_25" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4, 0.5)
 metadata/_edit_group_ = true
 
-[node name="Block_25_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_25"]
-mesh = SubResource("ArrayMesh_25o7b")
+[node name="Block_25_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_25"]
+mesh = SubResource("ArrayMesh_2ye3q")
 
-[node name="Block_25_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_25"]
+[node name="Block_25_col" type="StaticBody3D" parent="converted_blocks0/Block_25"]
 
-[node name="Block_25_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_25/Block_25_col"]
-shape = SubResource("ConvexPolygonShape3D_dhts1")
+[node name="Block_25_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_25/Block_25_col"]
+shape = SubResource("ConvexPolygonShape3D_njfj5")
 
-[node name="Block_26" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_26" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0.5)
 metadata/_edit_group_ = true
 
-[node name="Block_26_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_26"]
-mesh = SubResource("ArrayMesh_kp0cl")
+[node name="Block_26_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_26"]
+mesh = SubResource("ArrayMesh_u7gj4")
 
-[node name="Block_26_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_26"]
+[node name="Block_26_col" type="StaticBody3D" parent="converted_blocks0/Block_26"]
 
-[node name="Block_26_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_26/Block_26_col"]
-shape = SubResource("ConvexPolygonShape3D_cmodl")
+[node name="Block_26_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_26/Block_26_col"]
+shape = SubResource("ConvexPolygonShape3D_coox4")
 
-[node name="Block_27" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+[node name="Block_27" type="Node3D" parent="converted_blocks0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.5, 0.5)
 metadata/_edit_group_ = true
 
-[node name="Block_27_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Block_27"]
-mesh = SubResource("ArrayMesh_kqvk6")
+[node name="Block_27_mesh" type="MeshInstance3D" parent="converted_blocks0/Block_27"]
+mesh = SubResource("ArrayMesh_8xv1x")
 
-[node name="Block_27_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Block_27"]
+[node name="Block_27_col" type="StaticBody3D" parent="converted_blocks0/Block_27"]
 
-[node name="Block_27_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Block_27/Block_27_col"]
-shape = SubResource("ConvexPolygonShape3D_srs2m")
+[node name="Block_27_col_shp" type="CollisionShape3D" parent="converted_blocks0/Block_27/Block_27_col"]
+shape = SubResource("ConvexPolygonShape3D_o50aj")
