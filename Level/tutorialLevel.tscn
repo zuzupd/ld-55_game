@@ -1,4 +1,4 @@
-[gd_scene load_steps=184 format=3 uid="uid://bqlmwch4lviv0"]
+[gd_scene load_steps=185 format=3 uid="uid://bqlmwch4lviv0"]
 
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/nodes/cyclops_block.gd" id="1_xhobc"]
 [ext_resource type="Script" path="res://addons/cyclops_level_builder/resources/convex_block_data.gd" id="2_dp7b0"]
@@ -1063,6 +1063,11 @@ face_color = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 face_selected = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 active_face = -1
 face_ids = PackedInt32Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_mrqf7"]
+vertices = PackedVector3Array(4.25, 7.5, -31.5, 6.75, 7.5, -31.5, 9.25, 7.5, -32.25, 1.75, 7.5, -32.5, 12.75, -1.5, -26.75, 13.5, -1.5, -26.25, 13.75, -1.5, -26.75, 9, -1.5, -31.25, 6.75, -1.5, -30.75, 6.5, -1.5, -31.5, 4.75, -1.5, -31.5, 4.5, -1.5, -30.75, 4.5, -1.5, -30.75, 1, -1.5, -26.5, 1.75, -1.5, -24.75, 10, -1.5, -24.5, 10.75, -1.5, -26.5, 6.75, -1.5, -30.75, -2.25, -1.5, -27.5, -1.5, -1.5, -26.5, 1, -1.5, -26.5, 4.5, -1.5, -30.75, 2, -1.5, -31.25, 10.75, -1.5, -26.5, 12.75, -1.5, -26.75, 9, -1.5, -31.25, 6.75, -1.5, -30.75, -2.5, -1.5, -25.25, -1.5, -1.5, -26.5, -2.25, -1.5, -27.5, -7.25, -1.5, -23.75, -3.25, -1.5, -12.25, -1.75, -1.5, -13.75, -2.75, -1.5, -15, -3.25, -1.5, -12.25, -2.75, -1.5, -15, -2.75, -1.5, -16.25, -7.25, -1.5, -15.25, -7.25, -1.5, -15.25, -2.75, -1.5, -16.25, -2, -1.5, -17.5, -1.5, -1.5, -23, -2.5, -1.5, -24.5, -7.25, -1.5, -23.75, -0.5, -1.5, -17.75, -0.5, -1.5, -22.75, -1.5, -1.5, -23, -2, -1.5, -17.5, -2.5, -1.5, -24.5, -2.5, -1.5, -25.25, -7.25, -1.5, -23.75, 13.75, -1.5, -26.75, 13.5, -1.5, -26.25, 14, -1.5, -25.5, 17.5, -1.5, -23.5, 13.75, -1.5, -15, 13, -1.5, -13.75, 14.25, -1.5, -12.25, 13.75, -1.5, -15, 14.25, -1.5, -12.25, 17.5, -1.5, -15.25, 13.75, -1.5, -16.25, 11.75, -1.5, -22.75, 11.5, -1.5, -17.5, 13, -1.5, -17.25, 13, -1.5, -17.25, 13.75, -1.5, -16.25, 17.5, -1.5, -15.25, 17.5, -1.5, -23.5, 13.75, -1.5, -23.25, 11.75, -1.5, -22.75, 17.5, -1.5, -23.5, 14, -1.5, -25.5, 13.75, -1.5, -23.25, -1, 7.5, -25, -0.75, 7.5, -24.25, 0.25, 7.5, -24.5, -0.25, 7.5, -25.5, 11.5, 7.5, -25, 11.5, 7.5, -24.25, 12.5, 7.5, -24.25, 12.25, 7.5, -25.25, 11.5, -1.5, -17.5, 11.75, -1.5, -22.75, 11, -1.5, -22.75, 0.75, -1.5, -23, -0.5, -1.5, -22.75, -0.5, -1.5, -17.75, 1, -1.5, -17, 10, -1.5, -17, 11.5, -1.5, -17.5, 11, -1.5, -22.75, 10.25, -1.5, -23.5, 10, -1.5, -17, 10.25, -1.5, -23.5, 10, -1.5, -24.5, 9.75, -1.5, -15.75, 10, -1.5, -17, 10, -1.5, -24.5, 1.75, -1.5, -24.75, 0.75, -1.5, -23, 1.25, -1.5, -15.75, 0.75, -1.5, -23, 1, -1.5, -17, 1.25, -1.5, -15.75, -1.25, 7.5, -16, -1.25, 7.5, -15.25, -0.25, 7.5, -15.25, -0.5, 7.5, -16.25, 11.25, 7.5, -16, 11.25, 7.5, -15, 12.25, 7.5, -15.25, 12.25, 7.5, -16, 7.5, 0.75, -5, 8.5, 0.75, -5.5, 8.5, 0.5, -6.5, 2.75, 0.5, -6.25, 3.5, 0.75, -4, 14.25, -1.5, -12.25, 13, -1.5, -13.75, 10.5, -1.5, -13.75, 8.5, 0.5, -6.5, 12.3333, -1.5, -10.3333, 9.5, -1.5, -10.125, 3.5, 0.75, -4, 7.5, 0.75, -4, 7.5, 0.75, -5, 0.75, -1.5, -14, -1.75, -1.5, -13.75, -3.25, -1.5, -12.25, 2.75, 0.5, -6.25, 1.75, -1.5, -10.125, -1.25, -1.5, -10.25, 8.5, 0.5, -6.5, 10.5, -1.5, -13.75, 9.75, -1.5, -14.75, 9.125, -1.5, -10.625, 9.5, -1.5, -10.125, 9.75, -1.5, -14.75, 9.75, -1.5, -15.75, 1.25, -1.5, -15.75, 0.75, -1.5, -14, 2.75, 0.5, -6.25, 8.5, 0.5, -6.5, 9.125, -1.5, -10.625, 1.75, -1.5, -10.125, 7.51013, -1.5, -10.5041, 18.5, 7.5, -15.75, 18.5, 7.5, -14.75, 19, 7.5, -15, 1.5, 4.5, 4.75, 2.5, 4.5, 4.5, 2.5, 4.5, 3.5, 1.5, 4.5, 3.25, -2.5, 4.5, 5.5, 1.5, 4.5, -3, 1.5, 4.5, -5, -2.5, 6.75, -9.75, -0.5, 4.75, -6.375, 0.7, 4.5, -5.95, 1.5, 4.5, -3, 2.5, 4.5, -3.5, 2.5, 4.5, -4.5, 1.5, 4.5, -5, -2.5, 4.5, 5.5, 1.5, 4.5, 3.25, 1.5, 4.5, -3, -2.5, 6.75, -9.75, -2.5, 4.5, -5.59091, -0.5, 4.75, -6.375, -2.5, 4.5, 5.5, 1.5, 4.5, 5.5, 1.5, 4.5, 4.75, 1.5, 4.5, -5, 1.5, 4.5, -6, -2.5, 6.75, -9.75, 0.7, 4.5, -5.95, 8.5, 4.5, 3.5, 8.5, 4.5, 4.5, 9.25, 4.5, 4.5, 9.5, 4.5, 3.25, 13.5, 6.75, -9.75, 9.5, 4.5, -6, 9.5, 4.5, -4.75, 11.1, 4.75, -6.75, 8.5, 4.5, -4.5, 8.5, 4.5, -3.5, 9.5, 4.5, -3.25, 9.5, 4.5, -4.75, 13.5, 6.75, -9.75, 9.5, 4.5, -4.75, 9.5, 4.5, -3.25, 11.5, 4.75, -6.5, 11.1, 4.75, -6.75, 9.5, 4.5, 3.25, 9.25, 4.5, 4.5, 9.5, 4.5, 5.5, 13.5, 4.5, 5.5, 9.5, 4.5, -3.25, 9.5, 4.5, 3.25, 13.5, 4.5, 5.5, 13.5, 6.75, -9.75, 11.5, 4.75, -6.5, 13.5, 4.5, -5.59091, 10.5, 0.25, -6.75, 13.5, 0.5, -6.5, 13.5, -1, -9.5, -2.25, -1, -9.25, -2.25, 0.5, -6.5, 0.5, 0.5, -6.5, 7.5, 0.75, -4, 3.5, 0.75, -4, 3.5, 0.75, -3, 7.5, 0.75, -3, 2.75, 0.75, 2.5, 3.5, 0.75, 3, 7.5, 0.75, 3, 3.5, 0.75, 5, 3, 0.75, 5.5, 8, 0.75, 5.5, 7.5, 0.75, 5, 7.5, 0.75, 3, 8.5, 0.75, 2.5, 8.5, 0.75, -2.5, 7.5, 0.75, -3, 2.75, 0.75, -2.5, 2.75, 0.75, 2.5, 3.5, 0.75, 3, 3.5, 0.75, 5, 7.5, 0.75, 5, 7.5, 0.75, 3, 7.5, 0.75, -3, 3.5, 0.75, -3, 2.75, 0.75, -2.5)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(5, 4, 6), PackedInt32Array(6, 4, 7), PackedInt32Array(9, 8, 10), PackedInt32Array(10, 8, 11), PackedInt32Array(13, 12, 14), PackedInt32Array(14, 12, 17), PackedInt32Array(14, 17, 16), PackedInt32Array(14, 16, 15), PackedInt32Array(19, 18, 20), PackedInt32Array(20, 18, 22), PackedInt32Array(20, 22, 21), PackedInt32Array(24, 23, 25), PackedInt32Array(25, 23, 26), PackedInt32Array(28, 27, 29), PackedInt32Array(29, 27, 30), PackedInt32Array(33, 32, 31), PackedInt32Array(35, 34, 36), PackedInt32Array(36, 34, 37), PackedInt32Array(39, 38, 40), PackedInt32Array(40, 38, 41), PackedInt32Array(41, 38, 42), PackedInt32Array(42, 38, 43), PackedInt32Array(45, 44, 46), PackedInt32Array(46, 44, 47), PackedInt32Array(50, 49, 48), PackedInt32Array(52, 51, 53), PackedInt32Array(53, 51, 54), PackedInt32Array(57, 56, 55), PackedInt32Array(58, 61, 59), PackedInt32Array(59, 61, 60), PackedInt32Array(64, 63, 62), PackedInt32Array(66, 65, 67), PackedInt32Array(67, 65, 70), PackedInt32Array(67, 70, 69), PackedInt32Array(67, 69, 68), PackedInt32Array(73, 72, 71), PackedInt32Array(74, 77, 75), PackedInt32Array(75, 77, 76), PackedInt32Array(78, 81, 79), PackedInt32Array(79, 81, 80), PackedInt32Array(84, 83, 82), PackedInt32Array(86, 85, 87), PackedInt32Array(87, 85, 88), PackedInt32Array(91, 90, 92), PackedInt32Array(92, 90, 89), PackedInt32Array(95, 94, 93), PackedInt32Array(97, 96, 98), PackedInt32Array(98, 96, 99), PackedInt32Array(99, 96, 100), PackedInt32Array(100, 96, 101), PackedInt32Array(102, 104, 103), PackedInt32Array(105, 108, 106), PackedInt32Array(106, 108, 107), PackedInt32Array(112, 111, 109), PackedInt32Array(109, 111, 110), PackedInt32Array(114, 113, 115), PackedInt32Array(115, 113, 117), PackedInt32Array(115, 117, 116), PackedInt32Array(118, 122, 119), PackedInt32Array(119, 122, 120), PackedInt32Array(120, 122, 123), PackedInt32Array(123, 122, 121), PackedInt32Array(126, 125, 124), PackedInt32Array(129, 128, 132), PackedInt32Array(132, 128, 127), PackedInt32Array(132, 127, 131), PackedInt32Array(132, 131, 130), PackedInt32Array(133, 136, 137), PackedInt32Array(137, 136, 134), PackedInt32Array(134, 136, 135), PackedInt32Array(142, 146, 143), PackedInt32Array(143, 146, 144), PackedInt32Array(144, 146, 138), PackedInt32Array(138, 140, 139), PackedInt32Array(140, 146, 141), PackedInt32Array(141, 146, 145), PackedInt32Array(145, 146, 142), PackedInt32Array(146, 140, 138), PackedInt32Array(149, 148, 147), PackedInt32Array(151, 150, 152), PackedInt32Array(152, 150, 153), PackedInt32Array(153, 150, 154), PackedInt32Array(156, 155, 159), PackedInt32Array(159, 155, 158), PackedInt32Array(159, 158, 157), PackedInt32Array(161, 160, 162), PackedInt32Array(162, 160, 163), PackedInt32Array(167, 169, 168), PackedInt32Array(168, 169, 166), PackedInt32Array(168, 166, 165), PackedInt32Array(168, 165, 164), PackedInt32Array(172, 171, 170), PackedInt32Array(173, 176, 174), PackedInt32Array(174, 176, 175), PackedInt32Array(178, 177, 179), PackedInt32Array(179, 177, 180), PackedInt32Array(183, 182, 184), PackedInt32Array(184, 182, 181), PackedInt32Array(185, 188, 186), PackedInt32Array(186, 188, 187), PackedInt32Array(190, 193, 191), PackedInt32Array(191, 193, 192), PackedInt32Array(192, 193, 189), PackedInt32Array(195, 194, 196), PackedInt32Array(196, 194, 197), PackedInt32Array(201, 203, 202), PackedInt32Array(202, 203, 198), PackedInt32Array(198, 203, 199), PackedInt32Array(199, 203, 200), PackedInt32Array(206, 205, 204), PackedInt32Array(209, 208, 207), PackedInt32Array(213, 212, 210), PackedInt32Array(210, 212, 211), PackedInt32Array(216, 215, 214), PackedInt32Array(220, 219, 217), PackedInt32Array(217, 219, 218), PackedInt32Array(221, 226, 222), PackedInt32Array(222, 226, 225), PackedInt32Array(222, 225, 224), PackedInt32Array(222, 224, 223), PackedInt32Array(230, 229, 227), PackedInt32Array(227, 229, 228), PackedInt32Array(233, 232, 231)]
+agent_height = 1.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_t3d1h"]
 _surfaces = [{
@@ -3634,551 +3639,554 @@ script = ExtResource("1_xhobc")
 block_data = SubResource("Resource_mjdqi")
 materials = Array[Material]([ExtResource("6_ewwbo"), ExtResource("3_fr5dv")])
 
-[node name="converted_blocks0" type="Node3D" parent="."]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_mrqf7")
 
-[node name="Corridor" type="Node3D" parent="converted_blocks0"]
+[node name="converted_blocks0" type="Node3D" parent="NavigationRegion3D"]
 
-[node name="Block_7" type="Node3D" parent="converted_blocks0/Corridor"]
+[node name="Corridor" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
+
+[node name="Block_7" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Corridor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
 metadata/_edit_group_ = true
 
-[node name="Block_7_mesh" type="MeshInstance3D" parent="converted_blocks0/Corridor/Block_7"]
+[node name="Block_7_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_7"]
 mesh = SubResource("ArrayMesh_fcvyw")
 
-[node name="Block_7_col" type="StaticBody3D" parent="converted_blocks0/Corridor/Block_7"]
+[node name="Block_7_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_7"]
 
-[node name="Block_7_col_shp" type="CollisionShape3D" parent="converted_blocks0/Corridor/Block_7/Block_7_col"]
+[node name="Block_7_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_7/Block_7_col"]
 shape = SubResource("ConvexPolygonShape3D_84t0g")
 
-[node name="Block_0" type="Node3D" parent="converted_blocks0/Corridor"]
+[node name="Block_0" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Corridor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
 metadata/_edit_group_ = true
 
-[node name="Block_0_mesh" type="MeshInstance3D" parent="converted_blocks0/Corridor/Block_0"]
+[node name="Block_0_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_0"]
 mesh = SubResource("ArrayMesh_dfumq")
 
-[node name="Block_0_col" type="StaticBody3D" parent="converted_blocks0/Corridor/Block_0"]
+[node name="Block_0_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_0"]
 
-[node name="Block_0_col_shp" type="CollisionShape3D" parent="converted_blocks0/Corridor/Block_0/Block_0_col"]
+[node name="Block_0_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_0/Block_0_col"]
 shape = SubResource("ConvexPolygonShape3D_qvx0k")
 
-[node name="Block_1" type="Node3D" parent="converted_blocks0/Corridor"]
+[node name="Block_1" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Corridor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -6)
 metadata/_edit_group_ = true
 
-[node name="Block_1_mesh" type="MeshInstance3D" parent="converted_blocks0/Corridor/Block_1"]
+[node name="Block_1_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_1"]
 mesh = SubResource("ArrayMesh_cmu4m")
 
-[node name="Block_1_col" type="StaticBody3D" parent="converted_blocks0/Corridor/Block_1"]
+[node name="Block_1_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_1"]
 
-[node name="Block_1_col_shp" type="CollisionShape3D" parent="converted_blocks0/Corridor/Block_1/Block_1_col"]
+[node name="Block_1_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_1/Block_1_col"]
 shape = SubResource("ConvexPolygonShape3D_2xlkg")
 
-[node name="Block_2" type="Node3D" parent="converted_blocks0/Corridor"]
+[node name="Block_2" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Corridor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -6)
 metadata/_edit_group_ = true
 
-[node name="Block_2_mesh" type="MeshInstance3D" parent="converted_blocks0/Corridor/Block_2"]
+[node name="Block_2_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_2"]
 mesh = SubResource("ArrayMesh_qogp4")
 
-[node name="Block_2_col" type="StaticBody3D" parent="converted_blocks0/Corridor/Block_2"]
+[node name="Block_2_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_2"]
 
-[node name="Block_2_col_shp" type="CollisionShape3D" parent="converted_blocks0/Corridor/Block_2/Block_2_col"]
+[node name="Block_2_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_2/Block_2_col"]
 shape = SubResource("ConvexPolygonShape3D_ytr4y")
 
-[node name="Block_3" type="Node3D" parent="converted_blocks0/Corridor"]
+[node name="Block_3" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Corridor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
 metadata/_edit_group_ = true
 
-[node name="Block_3_mesh" type="MeshInstance3D" parent="converted_blocks0/Corridor/Block_3"]
+[node name="Block_3_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_3"]
 mesh = SubResource("ArrayMesh_x31xl")
 
-[node name="Block_3_col" type="StaticBody3D" parent="converted_blocks0/Corridor/Block_3"]
+[node name="Block_3_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_3"]
 
-[node name="Block_3_col_shp" type="CollisionShape3D" parent="converted_blocks0/Corridor/Block_3/Block_3_col"]
+[node name="Block_3_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_3/Block_3_col"]
 shape = SubResource("ConvexPolygonShape3D_a5ndg")
 
-[node name="Block_4" type="Node3D" parent="converted_blocks0/Corridor"]
+[node name="Block_4" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Corridor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -4)
 metadata/_edit_group_ = true
 
-[node name="Block_4_mesh" type="MeshInstance3D" parent="converted_blocks0/Corridor/Block_4"]
+[node name="Block_4_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_4"]
 mesh = SubResource("ArrayMesh_5715e")
 
-[node name="Block_4_col" type="StaticBody3D" parent="converted_blocks0/Corridor/Block_4"]
+[node name="Block_4_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_4"]
 
-[node name="Block_4_col_shp" type="CollisionShape3D" parent="converted_blocks0/Corridor/Block_4/Block_4_col"]
+[node name="Block_4_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_4/Block_4_col"]
 shape = SubResource("ConvexPolygonShape3D_vpwyh")
 
-[node name="Block_5" type="Node3D" parent="converted_blocks0/Corridor"]
+[node name="Block_5" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Corridor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
 metadata/_edit_group_ = true
 
-[node name="Block_5_mesh" type="MeshInstance3D" parent="converted_blocks0/Corridor/Block_5"]
+[node name="Block_5_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_5"]
 mesh = SubResource("ArrayMesh_pulyd")
 
-[node name="Block_5_col" type="StaticBody3D" parent="converted_blocks0/Corridor/Block_5"]
+[node name="Block_5_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_5"]
 
-[node name="Block_5_col_shp" type="CollisionShape3D" parent="converted_blocks0/Corridor/Block_5/Block_5_col"]
+[node name="Block_5_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_5/Block_5_col"]
 shape = SubResource("ConvexPolygonShape3D_2c4qs")
 
-[node name="Block_6" type="Node3D" parent="converted_blocks0/Corridor"]
+[node name="Block_6" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Corridor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 4)
 metadata/_edit_group_ = true
 
-[node name="Block_6_mesh" type="MeshInstance3D" parent="converted_blocks0/Corridor/Block_6"]
+[node name="Block_6_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_6"]
 mesh = SubResource("ArrayMesh_5wet4")
 
-[node name="Block_6_col" type="StaticBody3D" parent="converted_blocks0/Corridor/Block_6"]
+[node name="Block_6_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_6"]
 
-[node name="Block_6_col_shp" type="CollisionShape3D" parent="converted_blocks0/Corridor/Block_6/Block_6_col"]
+[node name="Block_6_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Corridor/Block_6/Block_6_col"]
 shape = SubResource("ConvexPolygonShape3D_6m3x5")
 
-[node name="Arena" type="Node3D" parent="converted_blocks0"]
+[node name="Arena" type="Node3D" parent="NavigationRegion3D/converted_blocks0"]
 
-[node name="stairs" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="stairs" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03534, -2.80298, 0)
 
-[node name="Block_8" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_8" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -6)
 metadata/_edit_group_ = true
 
-[node name="Block_8_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_8"]
+[node name="Block_8_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_8"]
 mesh = SubResource("ArrayMesh_gf2w1")
 
-[node name="Block_8_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_8"]
+[node name="Block_8_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_8"]
 
-[node name="Block_8_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_8/Block_8_col"]
+[node name="Block_8_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_8/Block_8_col"]
 shape = SubResource("ConvexPolygonShape3D_xfod8")
 
-[node name="Block_9" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_9" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -6.5)
 metadata/_edit_group_ = true
 
-[node name="Block_9_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_9"]
+[node name="Block_9_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_9"]
 mesh = SubResource("ArrayMesh_fhno6")
 
-[node name="Block_9_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_9"]
+[node name="Block_9_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_9"]
 
-[node name="Block_9_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_9/Block_9_col"]
+[node name="Block_9_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_9/Block_9_col"]
 shape = SubResource("ConvexPolygonShape3D_q8jaw")
 
-[node name="Block_10" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_10" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -7)
 metadata/_edit_group_ = true
 
-[node name="Block_10_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_10"]
+[node name="Block_10_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_10"]
 mesh = SubResource("ArrayMesh_rdghj")
 
-[node name="Block_10_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_10"]
+[node name="Block_10_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_10"]
 
-[node name="Block_10_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_10/Block_10_col"]
+[node name="Block_10_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_10/Block_10_col"]
 shape = SubResource("ConvexPolygonShape3D_n44pb")
 
-[node name="Block_11" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_11" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -7.5)
 metadata/_edit_group_ = true
 
-[node name="Block_11_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_11"]
+[node name="Block_11_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_11"]
 mesh = SubResource("ArrayMesh_7u4aw")
 
-[node name="Block_11_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_11"]
+[node name="Block_11_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_11"]
 
-[node name="Block_11_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_11/Block_11_col"]
+[node name="Block_11_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_11/Block_11_col"]
 shape = SubResource("ConvexPolygonShape3D_32bjf")
 
-[node name="Block_12" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_12" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -8)
 metadata/_edit_group_ = true
 
-[node name="Block_12_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_12"]
+[node name="Block_12_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_12"]
 mesh = SubResource("ArrayMesh_8etlf")
 
-[node name="Block_12_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_12"]
+[node name="Block_12_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_12"]
 
-[node name="Block_12_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_12/Block_12_col"]
+[node name="Block_12_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_12/Block_12_col"]
 shape = SubResource("ConvexPolygonShape3D_2cai5")
 
-[node name="Block_13" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_13" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -8.5)
 metadata/_edit_group_ = true
 
-[node name="Block_13_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_13"]
+[node name="Block_13_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_13"]
 mesh = SubResource("ArrayMesh_gvr4i")
 
-[node name="Block_13_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_13"]
+[node name="Block_13_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_13"]
 
-[node name="Block_13_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_13/Block_13_col"]
+[node name="Block_13_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_13/Block_13_col"]
 shape = SubResource("ConvexPolygonShape3D_26eux")
 
-[node name="Block_14" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_14" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -9)
 metadata/_edit_group_ = true
 
-[node name="Block_14_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_14"]
+[node name="Block_14_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_14"]
 mesh = SubResource("ArrayMesh_raueg")
 
-[node name="Block_14_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_14"]
+[node name="Block_14_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_14"]
 
-[node name="Block_14_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_14/Block_14_col"]
+[node name="Block_14_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_14/Block_14_col"]
 shape = SubResource("ConvexPolygonShape3D_m8k6d")
 
-[node name="Block_15" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_15" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -9.5)
 metadata/_edit_group_ = true
 
-[node name="Block_15_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_15"]
+[node name="Block_15_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_15"]
 mesh = SubResource("ArrayMesh_rmba8")
 
-[node name="Block_15_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_15"]
+[node name="Block_15_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_15"]
 
-[node name="Block_15_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_15/Block_15_col"]
+[node name="Block_15_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_15/Block_15_col"]
 shape = SubResource("ConvexPolygonShape3D_jsva0")
 
-[node name="Block_16" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_16" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -10)
 metadata/_edit_group_ = true
 
-[node name="Block_16_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_16"]
+[node name="Block_16_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_16"]
 mesh = SubResource("ArrayMesh_tcmps")
 
-[node name="Block_16_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_16"]
+[node name="Block_16_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_16"]
 
-[node name="Block_16_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_16/Block_16_col"]
+[node name="Block_16_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_16/Block_16_col"]
 shape = SubResource("ConvexPolygonShape3D_lu63m")
 
-[node name="Block_17" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_17" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -10.5)
 metadata/_edit_group_ = true
 
-[node name="Block_17_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_17"]
+[node name="Block_17_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_17"]
 mesh = SubResource("ArrayMesh_d2jyt")
 
-[node name="Block_17_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_17"]
+[node name="Block_17_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_17"]
 
-[node name="Block_17_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_17/Block_17_col"]
+[node name="Block_17_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_17/Block_17_col"]
 shape = SubResource("ConvexPolygonShape3D_5ymjy")
 
-[node name="Block_18" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_18" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -11)
 metadata/_edit_group_ = true
 
-[node name="Block_18_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_18"]
+[node name="Block_18_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_18"]
 mesh = SubResource("ArrayMesh_83y6w")
 
-[node name="Block_18_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_18"]
+[node name="Block_18_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_18"]
 
-[node name="Block_18_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_18/Block_18_col"]
+[node name="Block_18_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_18/Block_18_col"]
 shape = SubResource("ConvexPolygonShape3D_i754n")
 
-[node name="Block_19" type="Node3D" parent="converted_blocks0/Arena/stairs"]
+[node name="Block_19" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -11.5)
 metadata/_edit_group_ = true
 
-[node name="Block_19_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/stairs/Block_19"]
+[node name="Block_19_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_19"]
 mesh = SubResource("ArrayMesh_chts4")
 
-[node name="Block_19_col" type="StaticBody3D" parent="converted_blocks0/Arena/stairs/Block_19"]
+[node name="Block_19_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_19"]
 
-[node name="Block_19_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/stairs/Block_19/Block_19_col"]
+[node name="Block_19_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/stairs/Block_19/Block_19_col"]
 shape = SubResource("ConvexPolygonShape3D_jct2j")
 
-[node name="Block_8" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_8" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14, -4, -11)
 metadata/_edit_group_ = true
 
-[node name="Block_8_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_8"]
+[node name="Block_8_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_8"]
 mesh = SubResource("ArrayMesh_kdc0f")
 
-[node name="Block_8_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_8"]
+[node name="Block_8_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_8"]
 
-[node name="Block_8_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_8/Block_8_col"]
+[node name="Block_8_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_8/Block_8_col"]
 shape = SubResource("ConvexPolygonShape3D_ts56d")
 
-[node name="Block_10" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_10" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -4, -11)
 metadata/_edit_group_ = true
 
-[node name="Block_10_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_10"]
+[node name="Block_10_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_10"]
 mesh = SubResource("ArrayMesh_mwwfo")
 
-[node name="Block_10_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_10"]
+[node name="Block_10_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_10"]
 
-[node name="Block_10_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_10/Block_10_col"]
+[node name="Block_10_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_10/Block_10_col"]
 shape = SubResource("ConvexPolygonShape3D_vdq1j")
 
-[node name="Block_9" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_9" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -3, -6)
 metadata/_edit_group_ = true
 
-[node name="Block_9_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_9"]
+[node name="Block_9_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_9"]
 mesh = SubResource("ArrayMesh_34k6p")
 
-[node name="Block_9_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_9"]
+[node name="Block_9_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_9"]
 
-[node name="Block_9_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_9/Block_9_col"]
+[node name="Block_9_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_9/Block_9_col"]
 shape = SubResource("ConvexPolygonShape3D_onaom")
 
-[node name="Block_11" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_11" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, -2, -24)
 metadata/_edit_group_ = true
 
-[node name="Block_11_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_11"]
+[node name="Block_11_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_11"]
 mesh = SubResource("ArrayMesh_a1ftq")
 
-[node name="Block_11_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_11"]
+[node name="Block_11_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_11"]
 
-[node name="Block_11_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_11/Block_11_col"]
+[node name="Block_11_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_11/Block_11_col"]
 shape = SubResource("ConvexPolygonShape3D_6voxg")
 
-[node name="Block_12" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_12" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 19, -2, -16)
 metadata/_edit_group_ = true
 
-[node name="Block_12_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_12"]
+[node name="Block_12_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_12"]
 mesh = SubResource("ArrayMesh_1tr1f")
 
-[node name="Block_12_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_12"]
+[node name="Block_12_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_12"]
 
-[node name="Block_12_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_12/Block_12_col"]
+[node name="Block_12_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_12/Block_12_col"]
 shape = SubResource("ConvexPolygonShape3D_fjghr")
 
-[node name="Block_13" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_13" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 3, -6)
 metadata/_edit_group_ = true
 
-[node name="Block_13_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_13"]
+[node name="Block_13_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_13"]
 mesh = SubResource("ArrayMesh_yigys")
 
-[node name="Block_13_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_13"]
+[node name="Block_13_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_13"]
 
-[node name="Block_13_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_13/Block_13_col"]
+[node name="Block_13_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_13/Block_13_col"]
 shape = SubResource("ConvexPolygonShape3D_vk4kc")
 
-[node name="Block_14" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_14" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 3, -6)
 metadata/_edit_group_ = true
 
-[node name="Block_14_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_14"]
+[node name="Block_14_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_14"]
 mesh = SubResource("ArrayMesh_5fx8d")
 
-[node name="Block_14_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_14"]
+[node name="Block_14_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_14"]
 
-[node name="Block_14_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_14/Block_14_col"]
+[node name="Block_14_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_14/Block_14_col"]
 shape = SubResource("ConvexPolygonShape3D_8nich")
 
-[node name="Block_15" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_15" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, -2, -24)
 metadata/_edit_group_ = true
 
-[node name="Block_15_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_15"]
+[node name="Block_15_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_15"]
 mesh = SubResource("ArrayMesh_s3h6m")
 
-[node name="Block_15_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_15"]
+[node name="Block_15_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_15"]
 
-[node name="Block_15_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_15/Block_15_col"]
+[node name="Block_15_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_15/Block_15_col"]
 shape = SubResource("ConvexPolygonShape3D_efd80")
 
-[node name="Block_16" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_16" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -10)
 metadata/_edit_group_ = true
 
-[node name="Block_16_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_16"]
+[node name="Block_16_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_16"]
 mesh = SubResource("ArrayMesh_gf4av")
 
-[node name="Block_16_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_16"]
+[node name="Block_16_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_16"]
 
-[node name="Block_16_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_16/Block_16_col"]
+[node name="Block_16_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_16/Block_16_col"]
 shape = SubResource("ConvexPolygonShape3D_ab8ui")
 
-[node name="Block_17" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_17" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -2, -24)
 metadata/_edit_group_ = true
 
-[node name="Block_17_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_17"]
+[node name="Block_17_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_17"]
 mesh = SubResource("ArrayMesh_ikd4b")
 
-[node name="Block_17_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_17"]
+[node name="Block_17_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_17"]
 
-[node name="Block_17_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_17/Block_17_col"]
+[node name="Block_17_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_17/Block_17_col"]
 shape = SubResource("ConvexPolygonShape3D_7q8jr")
 
-[node name="Block_18" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_18" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, -3, -24)
 metadata/_edit_group_ = true
 
-[node name="Block_18_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_18"]
+[node name="Block_18_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_18"]
 mesh = SubResource("ArrayMesh_fdqe3")
 
-[node name="Block_18_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_18"]
+[node name="Block_18_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_18"]
 
-[node name="Block_18_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_18/Block_18_col"]
+[node name="Block_18_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_18/Block_18_col"]
 shape = SubResource("ConvexPolygonShape3D_v461u")
 
-[node name="Block_20" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_20" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 3, -32)
 metadata/_edit_group_ = true
 
-[node name="Block_20_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_20"]
+[node name="Block_20_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_20"]
 mesh = SubResource("ArrayMesh_pgngc")
 
-[node name="Block_20_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_20"]
+[node name="Block_20_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_20"]
 
-[node name="Block_20_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_20/Block_20_col"]
+[node name="Block_20_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_20/Block_20_col"]
 shape = SubResource("ConvexPolygonShape3D_c81tb")
 
-[node name="Block_21" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_21" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 5, -32)
 metadata/_edit_group_ = true
 
-[node name="Block_21_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_21"]
+[node name="Block_21_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_21"]
 mesh = SubResource("ArrayMesh_jwxba")
 
-[node name="Block_21_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_21"]
+[node name="Block_21_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_21"]
 
-[node name="Block_21_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_21/Block_21_col"]
+[node name="Block_21_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_21/Block_21_col"]
 shape = SubResource("ConvexPolygonShape3D_cbanu")
 
-[node name="Block_23" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_23" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 2, -32)
 metadata/_edit_group_ = true
 
-[node name="Block_23_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_23"]
+[node name="Block_23_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_23"]
 mesh = SubResource("ArrayMesh_k2pxf")
 
-[node name="Block_23_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_23"]
+[node name="Block_23_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_23"]
 
-[node name="Block_23_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_23/Block_23_col"]
+[node name="Block_23_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_23/Block_23_col"]
 shape = SubResource("ConvexPolygonShape3D_yohlf")
 
-[node name="Block_24" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_24" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 3, -32)
 metadata/_edit_group_ = true
 
-[node name="Block_24_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_24"]
+[node name="Block_24_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_24"]
 mesh = SubResource("ArrayMesh_ufbrw")
 
-[node name="Block_24_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_24"]
+[node name="Block_24_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_24"]
 
-[node name="Block_24_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_24/Block_24_col"]
+[node name="Block_24_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_24/Block_24_col"]
 shape = SubResource("ConvexPolygonShape3D_cw728")
 
-[node name="Block_25" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Block_25" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -32)
 metadata/_edit_group_ = true
 
-[node name="Block_25_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Block_25"]
+[node name="Block_25_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_25"]
 mesh = SubResource("ArrayMesh_jdvuc")
 
-[node name="Block_25_col" type="StaticBody3D" parent="converted_blocks0/Arena/Block_25"]
+[node name="Block_25_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_25"]
 
-[node name="Block_25_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Block_25/Block_25_col"]
+[node name="Block_25_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Block_25/Block_25_col"]
 shape = SubResource("ConvexPolygonShape3D_ne3sp")
 
-[node name="Column" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Column" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3167, -2, -2.67559)
 
-[node name="Block_3" type="Node3D" parent="converted_blocks0/Arena/Column"]
+[node name="Block_3" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -13)
 metadata/_edit_group_ = true
 
-[node name="Block_3_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Column/Block_3"]
+[node name="Block_3_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column/Block_3"]
 mesh = SubResource("ArrayMesh_7s3wk")
 
-[node name="Block_3_col" type="StaticBody3D" parent="converted_blocks0/Arena/Column/Block_3"]
+[node name="Block_3_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column/Block_3"]
 
-[node name="Block_3_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Column/Block_3/Block_3_col"]
+[node name="Block_3_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column/Block_3/Block_3_col"]
 shape = SubResource("ConvexPolygonShape3D_c3h5s")
 
-[node name="Block_4" type="Node3D" parent="converted_blocks0/Arena/Column"]
+[node name="Block_4" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 1, -13)
 metadata/_edit_group_ = true
 
-[node name="Block_4_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Column/Block_4"]
+[node name="Block_4_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column/Block_4"]
 mesh = SubResource("ArrayMesh_q0qx2")
 
-[node name="Block_4_col" type="StaticBody3D" parent="converted_blocks0/Arena/Column/Block_4"]
+[node name="Block_4_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column/Block_4"]
 
-[node name="Block_4_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Column/Block_4/Block_4_col"]
+[node name="Block_4_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column/Block_4/Block_4_col"]
 shape = SubResource("ConvexPolygonShape3D_rwxrf")
 
-[node name="Column2" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Column2" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.7002, -2, -2.5327)
 
-[node name="Block_3" type="Node3D" parent="converted_blocks0/Arena/Column2"]
+[node name="Block_3" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -13)
 metadata/_edit_group_ = true
 
-[node name="Block_3_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Column2/Block_3"]
+[node name="Block_3_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column2/Block_3"]
 mesh = SubResource("ArrayMesh_gkyua")
 
-[node name="Block_3_col" type="StaticBody3D" parent="converted_blocks0/Arena/Column2/Block_3"]
+[node name="Block_3_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column2/Block_3"]
 
-[node name="Block_3_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Column2/Block_3/Block_3_col"]
+[node name="Block_3_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column2/Block_3/Block_3_col"]
 shape = SubResource("ConvexPolygonShape3D_svwgh")
 
-[node name="Block_4" type="Node3D" parent="converted_blocks0/Arena/Column2"]
+[node name="Block_4" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 1, -13)
 metadata/_edit_group_ = true
 
-[node name="Block_4_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Column2/Block_4"]
+[node name="Block_4_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column2/Block_4"]
 mesh = SubResource("ArrayMesh_wdti2")
 
-[node name="Block_4_col" type="StaticBody3D" parent="converted_blocks0/Arena/Column2/Block_4"]
+[node name="Block_4_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column2/Block_4"]
 
-[node name="Block_4_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Column2/Block_4/Block_4_col"]
+[node name="Block_4_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column2/Block_4/Block_4_col"]
 shape = SubResource("ConvexPolygonShape3D_844go")
 
-[node name="Column3" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Column3" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6565, -2, -11.8245)
 
-[node name="Block_3" type="Node3D" parent="converted_blocks0/Arena/Column3"]
+[node name="Block_3" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -13)
 metadata/_edit_group_ = true
 
-[node name="Block_3_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Column3/Block_3"]
+[node name="Block_3_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column3/Block_3"]
 mesh = SubResource("ArrayMesh_m4dmm")
 
-[node name="Block_3_col" type="StaticBody3D" parent="converted_blocks0/Arena/Column3/Block_3"]
+[node name="Block_3_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column3/Block_3"]
 
-[node name="Block_3_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Column3/Block_3/Block_3_col"]
+[node name="Block_3_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column3/Block_3/Block_3_col"]
 shape = SubResource("ConvexPolygonShape3D_1xf8h")
 
-[node name="Block_4" type="Node3D" parent="converted_blocks0/Arena/Column3"]
+[node name="Block_4" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 1, -13)
 metadata/_edit_group_ = true
 
-[node name="Block_4_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Column3/Block_4"]
+[node name="Block_4_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column3/Block_4"]
 mesh = SubResource("ArrayMesh_hs262")
 
-[node name="Block_4_col" type="StaticBody3D" parent="converted_blocks0/Arena/Column3/Block_4"]
+[node name="Block_4_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column3/Block_4"]
 
-[node name="Block_4_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Column3/Block_4/Block_4_col"]
+[node name="Block_4_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column3/Block_4/Block_4_col"]
 shape = SubResource("ConvexPolygonShape3D_v81k5")
 
-[node name="Column4" type="Node3D" parent="converted_blocks0/Arena"]
+[node name="Column4" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.04, -2, -11.6816)
 
-[node name="Block_3" type="Node3D" parent="converted_blocks0/Arena/Column4"]
+[node name="Block_3" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -13)
 metadata/_edit_group_ = true
 
-[node name="Block_3_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Column4/Block_3"]
+[node name="Block_3_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column4/Block_3"]
 mesh = SubResource("ArrayMesh_uh3vd")
 
-[node name="Block_3_col" type="StaticBody3D" parent="converted_blocks0/Arena/Column4/Block_3"]
+[node name="Block_3_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column4/Block_3"]
 
-[node name="Block_3_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Column4/Block_3/Block_3_col"]
+[node name="Block_3_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column4/Block_3/Block_3_col"]
 shape = SubResource("ConvexPolygonShape3D_3bpqt")
 
-[node name="Block_4" type="Node3D" parent="converted_blocks0/Arena/Column4"]
+[node name="Block_4" type="Node3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 1, -13)
 metadata/_edit_group_ = true
 
-[node name="Block_4_mesh" type="MeshInstance3D" parent="converted_blocks0/Arena/Column4/Block_4"]
+[node name="Block_4_mesh" type="MeshInstance3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column4/Block_4"]
 mesh = SubResource("ArrayMesh_bdy21")
 
-[node name="Block_4_col" type="StaticBody3D" parent="converted_blocks0/Arena/Column4/Block_4"]
+[node name="Block_4_col" type="StaticBody3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column4/Block_4"]
 
-[node name="Block_4_col_shp" type="CollisionShape3D" parent="converted_blocks0/Arena/Column4/Block_4/Block_4_col"]
+[node name="Block_4_col_shp" type="CollisionShape3D" parent="NavigationRegion3D/converted_blocks0/Arena/Column4/Block_4/Block_4_col"]
 shape = SubResource("ConvexPolygonShape3D_xs1k1")

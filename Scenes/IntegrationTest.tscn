@@ -1,10 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://cyc3q4fgja1xu"]
+[gd_scene load_steps=11 format=3 uid="uid://cyc3q4fgja1xu"]
 
 [ext_resource type="PackedScene" uid="uid://bqlmwch4lviv0" path="res://Level/tutorialLevel.tscn" id="1_2nfi8"]
 [ext_resource type="PackedScene" uid="uid://d1adttlg6xjkr" path="res://Agents/Player/player.tscn" id="2_p7l0b"]
-[ext_resource type="PackedScene" path="res://Level/SealRoom.tscn" id="3_r00uw"]
-[ext_resource type="PackedScene" path="res://Level/RoomEntrance1.tscn" id="4_nn6uk"]
-[ext_resource type="PackedScene" path="res://Level/Coridor.tscn" id="5_erawl"]
+[ext_resource type="PackedScene" uid="uid://cl158yka16m38" path="res://Level/SealRoom.tscn" id="3_r00uw"]
+[ext_resource type="PackedScene" uid="uid://bftubcaynp05n" path="res://Level/RoomEntrance1.tscn" id="4_nn6uk"]
+[ext_resource type="PackedScene" uid="uid://br58073nkylsl" path="res://Level/Coridor.tscn" id="5_erawl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w3arj"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -18,6 +18,12 @@ background_mode = 2
 sky = SubResource("Sky_54p6r")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_qrve6"]
+vertices = PackedVector3Array(-6.60887, -1.51166, -42.574, -6.60887, -1.51166, -41.324, -5.35887, -1.51166, -41.324, -5.35887, -1.51166, -42.574, -1.85887, -1.51166, -42.574, -1.85887, -1.51166, -41.574, 1.39113, -1.51166, -41.574, 1.39113, -1.51166, -42.574, 4.64113, -1.51166, -42.574, 4.64113, -1.51166, -41.324, 5.64113, -1.51166, -41.324, 5.64113, -1.51166, -42.574, -7.60887, -1.51166, -36.324, -6.60887, -1.51166, -35.324, -4.35887, -1.51166, -37.574, -5.35887, -1.51166, -38.574, -0.858869, -1.51166, -35.074, -0.858869, -1.51166, -34.074, 0.391131, -1.51166, -34.074, 0.391131, -1.51166, -35.074)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1), PackedInt32Array(7, 6, 4), PackedInt32Array(4, 6, 5), PackedInt32Array(11, 10, 8), PackedInt32Array(8, 10, 9), PackedInt32Array(15, 14, 12), PackedInt32Array(12, 14, 13), PackedInt32Array(19, 18, 16), PackedInt32Array(16, 18, 17)]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5cc0m"]
 
 [node name="IntegrationTest" type="Node3D"]
 
@@ -42,3 +48,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.743884, -2.52956, -46.4663)
 
 [node name="Coridor" parent="." instance=ExtResource("5_erawl")]
 transform = Transform3D(0.998803, 0, -0.0489195, 0, 1, 0, 0.0489195, 0, 0.998803, -4.30149, -2.51789, -38.3033)
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_qrve6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.205474, -2.01166, -34.471)
+visible = false
+mesh = SubResource("PlaneMesh_5cc0m")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1.40179, 0, 0.713263, 0, 1, 0, -1.42653, 0, 0.700897, -5.99381, -1.9855, -37.0027)
+visible = false
+mesh = SubResource("PlaneMesh_5cc0m")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1, -0.205474, -2.01166, -42.074)
+visible = false
+mesh = SubResource("PlaneMesh_5cc0m")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1627, -2.01166, -42.0257)
+visible = false
+mesh = SubResource("PlaneMesh_5cc0m")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.93941, -2.01166, -42.0257)
+visible = false
+mesh = SubResource("PlaneMesh_5cc0m")
