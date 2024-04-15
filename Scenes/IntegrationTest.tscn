@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://cyc3q4fgja1xu"]
 
 [ext_resource type="PackedScene" uid="uid://d1adttlg6xjkr" path="res://Agents/Player/player.tscn" id="2_p7l0b"]
-[ext_resource type="PackedScene" uid="uid://cl158yka16m38" path="res://Level/SealRoom.tscn" id="3_r00uw"]
-[ext_resource type="PackedScene" uid="uid://bftubcaynp05n" path="res://Level/RoomEntrance1.tscn" id="4_nn6uk"]
-[ext_resource type="PackedScene" uid="uid://br58073nkylsl" path="res://Level/Coridor.tscn" id="5_erawl"]
+[ext_resource type="PackedScene" path="res://Level/SealRoom.tscn" id="3_r00uw"]
+[ext_resource type="PackedScene" path="res://Level/RoomEntrance1.tscn" id="4_nn6uk"]
+[ext_resource type="PackedScene" path="res://Level/Coridor.tscn" id="5_erawl"]
 [ext_resource type="PackedScene" uid="uid://dbqbermcbfeev" path="res://Agents/Enemy/cultist.tscn" id="5_mq8k8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_w3arj"]

@@ -5,12 +5,25 @@ extends CharacterBody3D
 @export var health = 2
 @export var speed = 5.0
 @export var melee_threshold = 2.0
+@export var melee_range = 2.0
 @export var melee_preference = 0.5
+@export var ranged_range = 10.0
 @export var ranged_spell_preference = 0.25
+@export var ranged_spell_range = 0.25
+@export var aoe_range = 10.0
 @export var aoe_preference = 0.25
+@export var agro_range = 30
+
+var provoked = false
+
+@onready var firebolt_scene = $"./Firebolt"
+#@export var explosion_scene
+
+var player
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	player = get_tree().get_first_node_in_group("Player")
 	var melee_area = $"../Player/MeleeArea"
 	if melee_area:
 		melee_area.connect("enemy_count_changed", Callable(self, "_on_enemy_count_changed"))
@@ -24,17 +37,34 @@ func _on_enemy_count_changed(count):
 	print("Updated enemy count: ", count)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _process(_delta: float) -> void:
+	if provoked:
+		nav_agent.target_position = player.global_position
 	
 func _physics_process(delta: float) -> void:
+	#var next_position = nav_agent.get_next_path_position()
+	#var direction = global_position.direction_to(next_position)
+	#var distance = global_position.distance_to(player.global_position)
+	
+	#if distance <= agro_range:
+		#provoked = true
+	#
+	#if direction:
+		#look_at_target(direction)
+		#velocity.x = direction.x * speed
+		#velocity.z = direction.z * speed
+	#else:
+		#velocity.x = move_toward(velocity.x, 0, speed)
+		#velocity.z = move_toward(velocity.z, 0, speed)
+	#
+	#move_and_slide()
+	
 	var current_location = global_transform.origin
 	var next_location = nav_agent.get_next_path_position()
+	look_at_target(next_location)
 	var new_velocity = (next_location - current_location).normalized() * speed
 	
 	nav_agent.set_velocity(new_velocity)
-	
-	#velocity = new_velocity
 	
 
 func isDead() -> bool:
@@ -99,6 +129,8 @@ func _on_vision_timer_timeout() -> void:
 				update_target_location(player.global_transform.origin)
 				decide_enemy_action(player, player_position, distance_to_player)
 				return
+				
+	
 
 
 func _on_navigation_agent_3d_velocity_computed(safe_velocity: Vector3) -> void:
@@ -109,3 +141,8 @@ func _on_navigation_agent_3d_velocity_computed(safe_velocity: Vector3) -> void:
 func _on_navigation_agent_3d_waypoint_reached(details: Dictionary) -> void:
 	#print("target reached")
 	pass
+
+func look_at_target(direction: Vector3) -> void:
+	var adjusted_direction = direction
+	adjusted_direction.y = 0
+	look_at(global_position + adjusted_direction, Vector3.UP, true)

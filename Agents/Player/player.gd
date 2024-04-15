@@ -1,11 +1,12 @@
 extends CharacterBody3D
 
+@export var player_health = 7
 @export var sensitivity: float = 0.001
 @export var deadzone: float = 0.001
 var mouse_motion: Vector2 = Vector2.ZERO
 @export var player_speed = 5.0
 
-@export var dodge_distance: float = 50.0
+@export var dodge_velocity: float = 6.5
 @export var dodge_cooldown: float = 0.5  # seconds
 var can_dodge = true
 var invulnerable = false
@@ -23,7 +24,7 @@ func _ready() -> void:
 	add_child(dodge_timer)
 	add_child(invulnerability_timer)
 	dodge_timer.wait_time = dodge_cooldown
-	invulnerability_timer.wait_time = 0.5  # Duration of invulnerability, adjust as needed
+	invulnerability_timer.wait_time = 0.5
 	dodge_timer.connect("timeout", Callable(self, "_on_dodge_timer_timeout"))
 	invulnerability_timer.connect("timeout", Callable(self, "_on_invulnerability_timer_timeout"))
 	
@@ -53,8 +54,8 @@ func _physics_process(delta: float) -> void:
 	var movement_direction = (forward_dir * input_z + right_dir * input_x).normalized()
 
 	if Input.is_action_pressed("movement_dodge") and can_dodge:
-		perform_dodge(movement_direction)
-	else:
+		perform_dodge()
+	elif !invulnerable:
 		if movement_direction.length() > 0:
 			velocity.x = movement_direction.x * player_speed
 			velocity.z = movement_direction.z * player_speed
@@ -74,12 +75,16 @@ func handle_rotation() -> void:
 		return
 
 
-func perform_dodge(movement_direction) -> void:
+func perform_dodge() -> void:
 	var dodge_direction
-	if movement_direction.length() > 0:
-		dodge_direction = movement_direction.normalized() * player_speed * dodge_distance
+	if Input.is_action_pressed("movement_up"):
+		dodge_direction = -transform.basis.z * dodge_velocity
+	elif Input.is_action_pressed("movement_right"):
+		dodge_direction = transform.basis.x * dodge_velocity
+	elif Input.is_action_pressed("movement_left"):
+		dodge_direction = -transform.basis.x * dodge_velocity
 	else:
-		dodge_direction = transform.basis.z.normalized() * dodge_distance
+		dodge_direction = transform.basis.z * dodge_velocity
 		
 	velocity += dodge_direction
 

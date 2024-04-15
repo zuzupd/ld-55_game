@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://pe47x6hw8wt1"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_8i4pp"]
+radius = 0.2
+height = 0.2
+radial_segments = 16
+rings = 16
+
+[node name="Firebolt" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_8i4pp")

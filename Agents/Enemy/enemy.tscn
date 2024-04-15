@@ -1,0 +1,96 @@
+[gd_scene load_steps=10 format=3 uid="uid://bendydthceovd"]
+
+[ext_resource type="Script" path="res://Enemy.gd" id="1_5nmlk"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hwpjj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qxebs"]
+albedo_color = Color(0.721569, 0.490196, 0.203922, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_dxcm4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u82s5"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bldbv"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5dkh3"]
+height = 5.0
+radius = 20.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_151ls"]
+height = 5.0
+radius = 10.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4m8tg"]
+radius = 2.5
+
+[node name="Enemy" type="CharacterBody3D" groups=["Enemies"]]
+collision_layer = 2049
+collision_mask = 2049
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+script = ExtResource("1_5nmlk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_hwpjj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_qxebs")
+mesh = SubResource("CapsuleMesh_dxcm4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 2.08165e-12, 0.423, -0.486)
+material_override = SubResource("StandardMaterial3D_u82s5")
+mesh = SubResource("BoxMesh_bldbv")
+
+[node name="Eyes" type="Node3D" parent="."]
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 2.0
+target_desired_distance = 2.0
+avoidance_enabled = true
+debug_enabled = true
+debug_path_custom_color = Color(1, 0, 0, 1)
+debug_path_custom_point_size = 2.0
+
+[node name="VisionTimer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[node name="RangedTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="MeleeTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="VisionArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VisionArea"]
+shape = SubResource("CylinderShape3D_5dkh3")
+
+[node name="RangedArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RangedArea"]
+shape = SubResource("CylinderShape3D_151ls")
+
+[node name="MeleeArea" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeleeArea"]
+shape = SubResource("CylinderShape3D_4m8tg")
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, 0, 0.443363, -0.642374)
+target_position = Vector3(2.08165e-12, 2.08165e-12, -10)
+collision_mask = 2048
+debug_shape_custom_color = Color(0, 0.862745, 0, 1)
+debug_shape_thickness = 3
+
+[connection signal="velocity_computed" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_velocity_computed"]
+[connection signal="waypoint_reached" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_waypoint_reached"]
+[connection signal="timeout" from="VisionTimer" to="." method="_on_vision_timer_timeout"]
+[connection signal="timeout" from="RangedTimer" to="." method="_on_ranged_timer_timeout"]
+[connection signal="timeout" from="MeleeTimer" to="." method="_on_melee_timer_timeout"]
+[connection signal="body_entered" from="VisionArea" to="." method="_on_vision_area_body_entered"]
+[connection signal="area_entered" from="MeleeArea" to="." method="_on_melee_area_area_entered"]
+[connection signal="body_entered" from="MeleeArea" to="." method="_on_melee_area_body_entered"]
